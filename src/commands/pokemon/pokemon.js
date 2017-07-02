@@ -38,9 +38,7 @@ module.exports = class PokemonCommand extends Command {
       setTimeout(() => {
         delete cooldown[user.id];
       }, 10800000); //3 hours
-    } catch(e) {
-
-    }
+    } catch(e) {}
 
     /*setInterval(() => {
       Object.keys(cooldown).forEach(key => {
@@ -56,7 +54,7 @@ module.exports = class PokemonCommand extends Command {
       Object.keys(data[user.id].pokemon).forEach(key => {
         arr.push(data[user.id].pokemon[key].name);
       });
-      if (arr.length === 151) return msg.reply('You\'ve already caught all 151 pokemon!');
+      if (arr.length > 150) return msg.reply(':tada: **You\'ve caught all 151 pokemon!** :tada:');
       if (data[user.id].pokemon[newPokemon]) {
         data[user.id].pokemon[newPokemon].count++;
         fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));

@@ -21,11 +21,9 @@ module.exports = class ServerInfoCommand extends Command {
 	async run(msg) {
 		if (!msg.channel.permissionsFor(this.client.user).hasPermission('EMBED_LINKS')) return msg.reply(':no_entry_sign: I don\'t have the **Embed Links** permission!');
 
-		const online = this.client.emojis.get('212789758110334977');
-		const robot = this.client.emojis.get('230100838549291009');
 		const guild = await msg.guild.fetchMembers();
-		const bots = `${guild.members.filter(member => member.user.bot).size}${robot}`;
-		const onlinePeeps = `${guild.members.size} members\n${guild.members.filter(member => member.presence.status !== 'offline').size}${online}`;
+		const bots = `${guild.members.filter(member => member.user.bot).size} bots`;
+		const onlinePeeps = `${guild.members.size} members\n${guild.members.filter(member => member.presence.status !== 'offline').size} online`;
 
 		const embed = new RichEmbed();
 		embed.setColor(0x0d0d0d)

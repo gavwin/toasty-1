@@ -634,9 +634,6 @@
   "327418342044467200": {
     "joinDM": "suck my dick"
   },
-  "328349343302156298": {
-    "modlog": "enabled"
-  },
   "318584379137982484": {
     "modlog": "enabled"
   },
@@ -689,25 +686,119 @@
   "328292643656433665": {
     "modlog": "enabled"
   },
-  "317420664745361430": {
-    "modlog": "disabled"
-  },
   "327125914230063105": {
     "modlog": "enabled",
     "nonsfw": "disabled",
-    "joinlog": "enabled"
+    "joinlog": "disabled"
   },
   "285457273730629632": {
-    "modlog": "enabled"
+    "modlog": "disabled"
   },
   "294657571070017536": {
     "joinlog": "enabled"
   },
   "329330718620778498": {
-    "joinMessage": "Welcome to %server%, %user%! Remember, N64 SUX PSX RULEZ N64 SUX PSX RULEZ N64 SUX PSX RULEZ.",
-    "leaveMessage": "%user% left %server%. Fuck that nerd."
+    "joinMessage": "Welcome {user}! Remember, N64 SUX PSX RULEZ N64 SUX PSX RULEZ N64 SUX PSX RULEZ.",
+    "leaveMessage": "{user} left the Ant Live Games. Fuck that nerd."
   },
-  "328879303183826955": {
+  "197727670551838720": {
+    "modlog": "disabled"
+  },
+  "313821172380991488": {
+    "joinMessage": "**Welcome to Kryptonite!**",
+    "leaveMessage": "**Sorry to see you go!**",
+    "joinDM": "Welcome to the official discord of the Kyptonite Faction!\n\n- Go to <#313821172380991488> to talk about non-faction related things.\n- Go to <#329374981253496835> to talk about faction related things.\n- Go to <#329375562143498240> to talk about attack strategy.\n- Go to <#329375328160186369> to talk about defense strategy.\n- Go to <#329377252527833088> to talk about cannon strategy.\n- <#329378484189265932> is for the mods of the faction\n- <#329378527247990785> is for the leaders of the faction!\n\n- We are always watching the members of the faction. Please do not ask to be promoted. We will notice your work, one way or another. Asking for a promotion, will result in a demoted or kick.\n\nFaction Jobs - Attack, Defense, Cannoning.\n\nAttack Strategists - Focuses mainly on who to attack, how to attack, and when to attack. This group desides everything about a raid. Who are we going to raid, who will go on the raid, what time will the raid begin, what methods will we use to raid this person. These are all important decisions that must be sorted out.\n\nDefense Strategists - Focuses mainly on the best ways to protect the faction base. Not only will this group deside how to protect the base, but they will also do the most work on creating the base. As everyone will chip in, this group makes all the decisions.\n\nCannon Strategists - This may be the most important and hardest job in the faction. The members in this group put their minds together to think up a perfect redstone contraption to blow up the victims base. As they do not make as many important decisions. They are one of the most important assets.",
+    "joinRole": "Peasant",
+    "modlog": "enabled",
+    "nonsfw": "disabled"
+  },
+  "328880894175739906": {
     "modlog": "enabled"
+  },
+  "329677101617643540": {
+    "joinDM": "Remember to link your roblox account! \" !linkaccount-safe \", then \" !getrole \"!"
+  },
+  "329831704653070336": {
+    "joinMessage": "Welcome to the Discord Server! ❤     Be sure to visit Rules and Ranks for more info",
+    "joinRole": "Member",
+    "modlog": "enabled"
+  },
+  "299400508437692416": {
+    "modlog": "enabled"
+  },
+  "329753885998579713": {
+    "joinRole": "Noob"
+  },
+  "325469059644653570": {
+    "modlog": "enabled"
+  },
+  "329975244389482496": {
+    "joinRole": "Peasants"
+  },
+  "293989011381288960": {
+    "joinlog": "enabled"
+  },
+  "298378003950600192": {
+    "modlog": "enabled"
+  },
+  "299911906397782016": {
+    "modlog": "disabled"
+  },
+  "301212864528777216": {
+    "modlog": "enabled"
+  },
+  "330301260685246464": {
+    "joinRole": "Abonné"
+  },
+  "322779993295814657": {
+    "modlog": "enabled"
+  },
+  "328012352509313024": {
+    "modlog": "enabled"
+  },
+  "325406746082279435": {
+    "modlog": "enabled"
+  },
+  "276521024202342402": {
+    "modlog": "enabled"
+  },
+  "327908432101244948": {
+    "joinMessage": "{user}! Welcome to the Imperium!"
+  },
+  "330454533400690698": {
+    "nonsfw": "enabled",
+    "modlog": "enabled"
+  },
+  "330532398288732171": {
+    "modlog": "enabled"
+  },
+  "329861324630917120": {
+    "noinvite": "enabled",
+    "modlog": "enabled",
+    "joinlog": "enabled",
+    "nonsfw": "enabled"
+  },
+  "213051806492786689": {
+    "modlog": "enabled",
+    "joinMessage": "Hello!"
+  },
+  "273001640217542657": {
+    "joinMessage": "**{user}, Welcome to the Institution for the Mentally Overwhelmed!**"
+  },
+  "280655104028442624": {
+    "joinlog": "disabled",
+    "joinMessage": "Welcome {user} to the GTA BOI'S server. Please read {<#320038073981468683>} as soon as possible and enjoy your stay."
+  },
+  "331018361704153089": {
+    "modlog": "disabled"
+  },
+  "330288963732635650": {
+    "modlog": "enabled",
+    "nonsfw": "enabled"
+  },
+  "325276345133432834": {
+    "joinMessage": "Welcome to my Toasty Suprise.",
+    "leaveMessage": "Fuck Off Cheeky Cunt!",
+    "joinRole": "Weebius Plebious"
   }
 }

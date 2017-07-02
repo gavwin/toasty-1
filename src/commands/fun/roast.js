@@ -27,8 +27,7 @@ module.exports = class RoastCommand extends Command {
 
   run(msg, args) {
     const { user } = args;
-    console.log(user);
-    if (user.id === this.client.user.id) return msg.reply(':fire: Listen up Dumbass retard! I ain\'t gonna roast myself!');
+    if (user.id === this.client.user.id) return msg.reply(':fire: Listen up you dumbass retard! I ain\'t gonna roast myself!');
     msg.say(`:fire: **${user.user.username}**, ${roasts[Math.floor(Math.random() * roasts.length)]}`);
   }
 };

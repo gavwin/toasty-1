@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/gavwin/toasty#readme",
   "dependencies": {
+    "canvas-prebuilt": "^1.6.5-prerelease.1",
     "common-tags": "^1.4.0",
     "discord.js": "^11.1.0",
     "discord.js-commando": "git://github.com/Gawdl3y/discord.js-commando.git#11.1",

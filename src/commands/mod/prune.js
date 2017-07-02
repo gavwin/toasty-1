@@ -88,5 +88,3 @@ module.exports = class PruneCommand extends Command {
 		}
 	}
 };
-
-process.on('unhandledRejection', err => { console.error(`Uncaught Promise Error: \n${err.stack}`) });

@@ -62,7 +62,6 @@ module.exports = class BanCommand extends Command {
 				let modlogData = data[msg.guild.id] ? data[msg.guild.id] : {modlog: 'disabled'};
 				if (modlogData.modlog === 'disabled') {
 					m.edit(`**${member.user.username}**#${member.user.discriminator} has been banned.`);
-					console.log('disabled');
 				} else
 				if (modlogData.modlog === 'enabled') {
 					const embed = new RichEmbed();
@@ -81,10 +80,8 @@ module.exports = class BanCommand extends Command {
 						return msg.reply(':no_entry_sign: **Error:** I couldn\'t send the ban embed in the #mod-log. Please make sure I have access to a channel called mod-log!');
 					});
 					m.edit(`**${member.user.username}**#${member.user.discriminator} has been banned. I've logged it in the #mod-log.`);
-					console.log('enabled');
 				} else {
 					m.edit(`**${member.user.username}**#${member.user.discriminator} has been banned.`);
-					console.log('disabled else');
 				}
 				} else if (['n', 'no', 'cancel'].includes(co.first().content)) {
 					return msg.say('Got it, I won\'t ban the user.');

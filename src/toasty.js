@@ -1,12 +1,12 @@
 const { CommandoClient } = require('discord.js-commando');
 const fs = require('fs');
 const path = require('path');
-const config = require('./config');
+const { me, prefix, token } = require('./config');
 
 const client = new CommandoClient({
-  commandPrefix: config.prefix,
+  commandPrefix: prefix,
   unknownCommandResponse: false,
-  owner: config.me,
+  owner: me,
   clientOptions: { disabledEvents: ['USER_NOTE_UPDATE', 'VOICE_STATE_UPDATE', 'TYPING_START', 'VOICE_SERVER_UPDATE', 'PRESENCE_UPDATE'] },
   disableEveryone: true,
   invite: 'https://discord.me/toasty'
@@ -39,4 +39,4 @@ fs.readdir(`${__dirname}/events/`, (err, files) => {
   });
 });
 
-client.login(config.token);
+client.login(token);

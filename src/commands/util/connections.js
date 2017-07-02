@@ -19,6 +19,6 @@ module.exports = class ConnectionsCommand extends Command {
     const m = await msg.say('*Fetching voice connections...*');
     const connectionRes = await this.client.shard.fetchClientValues('voiceConnections.size');
     const connections = connectionRes.reduce((prev, val) => prev + val, 0);
-    m.edit(`:notes: Currently playing some *toasty* music in **${connections}** voice channels.\nThis shard (shard ${this.client.shard.id}) is playing in **${this.client.voiceConnections.size}** voice channels.`)
+    m.edit(`:notes: Currently playing some *toasty* music in **${connections}** voice channels.`)
   }
 }

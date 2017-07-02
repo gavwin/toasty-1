@@ -3,6 +3,8 @@ const indico = require('indico.io');
 const path = require('path');
 const fs = require('fs');
 const url = require('url');
+const { me } = require('../config.json');
+const statsPath = path.join(__dirname, '..', 'data/stats.json');
 const yt = require('ytdl-core');
 const YouTube = require('youtube-node');
 const youTube = new YouTube();
@@ -11,6 +13,21 @@ const playlists = ['pop', 'hiphop', 'electro', 'classical', 'rock-n-roll', 'chil
 
 exports.run = (client, msg) => {
   if (msg.channel.type === 'dm') return;
+  if (!msg.guild.member(client.user).hasPermission('SEND_MESSAGES')) return;
+
+  if (msg.content.startsWith(prefix+'cleartoday') && msg.author.id === me) {
+    const stats = JSON.parse(fs.readFileSync(statsPath, 'utf8'));
+    if (!stats) stats = { guilds: 0 };
+    stats.guilds = 0;
+    fs.writeFileSync(statsPath, JSON.stringify(stats));
+    msg.channel.send('Done.\n'+stats.guilds);
+  }
+
+  if (msg.content.startsWith(prefix+'today') && msg.author.id === me) {
+    const stats = JSON.parse(fs.readFileSync(statsPath, 'utf8'));
+    msg.channel.send(stats.guilds);
+  }
+
 
   const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data/servers.json')));
   const settings = data[msg.guild.id] ? data[msg.guild.id] : {nonsfw: 'disabled', noinvite: 'disabled'};
@@ -41,6 +58,8 @@ exports.run = (client, msg) => {
   }
 
   if (!msg.content.startsWith(prefix)) return;
+  if (msg.content.startsWith(prefix+'play') && client.voiceConnections.size > 10 && msg.guild.id !== '208674478773895168') return msg.channel.send(':no_entry_sign: Sorry but I am already playing in over 10 voice channels on this shard. If you would like to have me play in this server no matter what, please donate:\nhttp://toastythebot.tk/donate');
+  if (msg.content.startsWith(prefix+'play') && !msg.guild.member(client.user).hasPermission('CONNECT') || !msg.guild.member(client.user).hasPermission('SPEAK')) return msg.reply(':no_entry_sign: I don\'t have the **Connect** or **Speak** permission!');
   if (musicCommands.hasOwnProperty(msg.content.toLowerCase().slice(1).split(' ')[0])) musicCommands[msg.content.toLowerCase().slice(1).split(' ')[0]](msg);
 }
 
@@ -59,9 +78,21 @@ const musicCommands = {
         queue[msg.guild.id].playing = false;
         msg.member.voiceChannel.leave();
       });
-      msg.channel.send(`:notes: Now playing **${song.title}** as requested by **${song.requester}**`);
-      queue[msg.guild.id].nowPlaying = {title: song.title, requester: song.requester, url: song.url};
-      dispatcher = msg.guild.voiceConnection.playStream(yt(song.url, { audioonly: true }), { passes: 1 });
+      msg.channel.send(`:satellite: Loading **${song.title}**...`).then(m => {
+        try {
+          setTimeout(() => {
+            m.edit(`:notes: Now playing **${song.title}** as requested by **${song.requester}**`);
+            queue[msg.guild.id].nowPlaying = {title: song.title, requester: song.requester, url: song.url};
+          }, 1000);
+        } catch(e) {
+          m.edit(`:notes: Now playing **${song.title}** as requested by **${song.requester}**`);
+        }
+      });
+      try {
+        dispatcher = msg.guild.voiceConnection.playStream(yt(song.url, { audioonly: true }), { passes: 1 });
+      } catch(e) {
+        msg.channel.send('There was an issue playing the next song in the queue.');
+      }
       let collector = msg.channel.createCollector(m => m);
       collector.on('collect', m => {
         if (m.content.startsWith(prefix+'pause')) {
@@ -187,7 +218,7 @@ const musicCommands = {
     msg.reply(':white_check_mark: I\'ve cleared the server queue.');
   },
   'playlists': (msg) => {
-    msg.channel.send('Avaliable playlists include:\n`'+playlists.join(' ,')+'`');
+    msg.channel.send('Avaliable playlists include:\n`'+playlists.join(', ')+'`');
   },
   'playlist': (msg) => {
     if (msg.content === prefix+'playlist') return msg.reply(`Please specify a playlist to play!\nPlaylists: \`${playlists.join(', ')}\``);
