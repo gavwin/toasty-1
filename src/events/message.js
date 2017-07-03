@@ -71,10 +71,12 @@ const musicCommands = {
     if (queue[msg.guild.id].paused) return msg.channel.send(`:no_entry_sign: I\'m currently paused. Type \`${prefix}resume\` to resume playing the current song.`);
     if (queue[msg.guild.id].playing) return msg.channel.send(':no_entry_sign: I\'m already playing music on this server!');
     let dispatcher;
+    if (!queue[msg.guild.id]) queue[msg.guild.id] = {playing: true};
     queue[msg.guild.id].playing = true;
 
     (function play(song) {
       if (song === undefined) return msg.channel.send(':no_entry_sign: The server queue is now empty. Leaving voice channel...').then(() => {
+        if (!queue[msg.guild.id]) queue[msg.guild.id] = {playing: false};
         queue[msg.guild.id].playing = false;
         msg.member.voiceChannel.leave();
       });
@@ -248,10 +250,11 @@ const musicCommands = {
 
       const arr = new Array();
       for (let i = 0, len = songs.length; i < 15; i++) {
-        let r = Math.floor(Math.random() * (len - 0 + 1)) + 0;
+        let r = Math.floor(Math.random() * (len + 1));
+        while (arr.includes(r)) {
+          r = Math.floor(Math.random() * (len + 1));
+        }
         arr.push(r);
-        if (arr.includes(r)) r = Math.floor(Math.random() * (len - 0 + 1)) + 0;
-        if (i === 15) break;
           try {
             const info = await getInfo(songs[r]);
             if (!queue.hasOwnProperty(msg.guild.id)) queue[msg.guild.id] = {}, queue[msg.guild.id].playing = false, queue[msg.guild.id].songs = [];
