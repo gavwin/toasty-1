@@ -20,12 +20,12 @@ exports.run = (client, msg) => {
     if (!stats) stats = { guilds: 0 };
     stats.guilds = 0;
     fs.writeFileSync(statsPath, JSON.stringify(stats));
-    msg.channel.send('Done.\n'+stats.guilds);
+    msg.channel.send(`I've cleared today's servers made.\n${stats.guilds}`);
   }
 
   if (msg.content.startsWith(prefix+'today') && msg.author.id === me) {
     const stats = JSON.parse(fs.readFileSync(statsPath, 'utf8'));
-    msg.channel.send(stats.guilds);
+    msg.channel.send(`I've made **${stats.guilds}** servers today!`);
   }
 
 
@@ -147,14 +147,20 @@ const musicCommands = {
             delete dispatcher;
             play(queue[msg.guild.id].songs.shift());
           }, 200);
-          setTimeout(() => { if (queue[msg.guild.id].volume) dispatcher.setVolume(queue[msg.guild.id].volume) }, 1000);
+          setTimeout(() => {
+            if (!queue[msg.guild.id]) queue[msg.guild.id] = {volume: 1};
+            if (queue[msg.guild.id].volume) dispatcher.setVolume(queue[msg.guild.id].volume);
+          }, 1000);
         }
       });
       dispatcher.on('error', (err) => {
         return msg.channel.send(':no_entry_sign: **Error:** An unknown error occured:\n'+err).then(() => {
           collector.stop();
           play(queue[msg.guild.id].songs.shift());
-          if (queue[msg.guild.id].volume) dispatcher.setVolume(queue[msg.guild.id].volume);
+          setTimeout(() => {
+            if (!queue[msg.guild.id]) queue[msg.guild.id] = {volume: 1};
+            if (queue[msg.guild.id].volume) dispatcher.setVolume(queue[msg.guild.id].volume);
+          }, 1000);
         });
       });
     })(queue[msg.guild.id].songs.shift());

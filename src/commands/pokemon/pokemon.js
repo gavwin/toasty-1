@@ -31,13 +31,14 @@ module.exports = class PokemonCommand extends Command {
     if (cooldown[user.id] && cooldown[user.id].time > 0) return msg.say(`:no_entry_sign: **${user.username}**, you need to wait another **${moment.duration(cooldown[user.id].time).format(' H [hours], m [minutes] & s [seconds]')}** before catching another pokemon.`);
     if (!cooldown[user.id]) cooldown[user.id] = {time: 10800000};
     try {
-    cooldown[user.id].time = 10800000; //3 hours
-      setInterval(() => {
-        cooldown[user.id].time -= 10000; //remove 10 seconds
-      }, 10000); //every 10 seconds
-      setTimeout(() => {
-        delete cooldown[user.id];
-      }, 10800000); //3 hours
+      cooldown[user.id].time = 10800000; //3 hours
+        setInterval(() => {
+          if (!cooldown[user.id]) cooldown[user.id] = {time: 0};
+          cooldown[user.id].time -= 10000; //remove 10 seconds
+        }, 10000); //every 10 seconds
+        setTimeout(() => {
+          delete cooldown[user.id];
+        }, 10800000); //3 hours
     } catch(e) {}
 
     /*setInterval(() => {
