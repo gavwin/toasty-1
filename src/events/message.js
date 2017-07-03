@@ -82,6 +82,13 @@ const musicCommands = {
         try {
           setTimeout(() => {
             m.edit(`:notes: Now playing **${song.title}** as requested by **${song.requester}**`);
+            if (!queue[msg.guild.id]) queue[msg.guild.id] = {
+              nowPlaying: {
+                title: song.title,
+                requester: song.requester,
+                url: song.url
+              }
+            };
             queue[msg.guild.id].nowPlaying = {title: song.title, requester: song.requester, url: song.url};
           }, 1000);
         } catch(e) {

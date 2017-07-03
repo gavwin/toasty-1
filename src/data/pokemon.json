@@ -230,6 +230,16 @@
         "name": "Venusaur",
         "gif": "http://www.pokestadium.com/sprites/xy/venusaur.gif",
         "count": 1
+      },
+      "Metapod": {
+        "name": "Metapod",
+        "gif": "http://www.pokestadium.com/sprites/xy/metapod.gif",
+        "count": 1
+      },
+      "Tauros": {
+        "name": "Tauros",
+        "gif": "http://www.pokestadium.com/sprites/xy/tauros.gif",
+        "count": 1
       }
     }
   },
@@ -630,6 +640,21 @@
         "name": "Shellder",
         "gif": "http://www.pokestadium.com/sprites/xy/shellder.gif",
         "count": 1
+      },
+      "Moltres": {
+        "name": "Moltres",
+        "gif": "http://www.pokestadium.com/sprites/xy/moltres.gif",
+        "count": 1
+      },
+      "Eevee": {
+        "name": "Eevee",
+        "gif": "http://www.pokestadium.com/sprites/xy/eevee.gif",
+        "count": 1
+      },
+      "Mankey": {
+        "name": "Mankey",
+        "gif": "http://www.pokestadium.com/sprites/xy/mankey.gif",
+        "count": 1
       }
     }
   },
@@ -758,6 +783,16 @@
         "name": "Sandslash",
         "gif": "http://www.pokestadium.com/sprites/xy/sandslash.gif",
         "count": 1
+      },
+      "Psyduck": {
+        "name": "Psyduck",
+        "gif": "http://www.pokestadium.com/sprites/xy/psyduck.gif",
+        "count": 1
+      },
+      "Ekans": {
+        "name": "Ekans",
+        "gif": "http://www.pokestadium.com/sprites/xy/ekans.gif",
+        "count": 1
       }
     }
   },
@@ -832,6 +867,11 @@
         "name": "Alakazam",
         "gif": "http://www.pokestadium.com/sprites/xy/alakazam.gif",
         "count": 1
+      },
+      "Cubone": {
+        "name": "Cubone",
+        "gif": "http://www.pokestadium.com/sprites/xy/cubone.gif",
+        "count": 1
       }
     }
   },
@@ -890,6 +930,11 @@
       "Kakuna": {
         "name": "Kakuna",
         "gif": "http://www.pokestadium.com/sprites/xy/kakuna.gif",
+        "count": 1
+      },
+      "Rattata": {
+        "name": "Rattata",
+        "gif": "http://www.pokestadium.com/sprites/xy/rattata.gif",
         "count": 1
       }
     }
@@ -1093,6 +1138,11 @@
         "name": "Shellder",
         "gif": "http://www.pokestadium.com/sprites/xy/shellder.gif",
         "count": 1
+      },
+      "Seel": {
+        "name": "Seel",
+        "gif": "http://www.pokestadium.com/sprites/xy/seel.gif",
+        "count": 1
       }
     }
   },
@@ -1145,6 +1195,11 @@
         "name": "Golbat",
         "gif": "http://www.pokestadium.com/sprites/xy/golbat.gif",
         "count": 1
+      },
+      "Primeape": {
+        "name": "Primeape",
+        "gif": "http://www.pokestadium.com/sprites/xy/primeape.gif",
+        "count": 1
       }
     }
   },
@@ -1182,7 +1237,7 @@
       "Marowak": {
         "name": "Marowak",
         "gif": "http://www.pokestadium.com/sprites/xy/marowak.gif",
-        "count": 1
+        "count": 2
       },
       "Grimer": {
         "name": "Grimer",
@@ -1237,6 +1292,11 @@
       "Tentacool": {
         "name": "Tentacool",
         "gif": "http://www.pokestadium.com/sprites/xy/tentacool.gif",
+        "count": 1
+      },
+      "Haunter": {
+        "name": "Haunter",
+        "gif": "http://www.pokestadium.com/sprites/xy/haunter.gif",
         "count": 1
       }
     }
@@ -1357,6 +1417,11 @@
         "name": "Meowth",
         "gif": "http://www.pokestadium.com/sprites/xy/meowth.gif",
         "count": 1
+      },
+      "Blastoise": {
+        "name": "Blastoise",
+        "gif": "http://www.pokestadium.com/sprites/xy/blastoise.gif",
+        "count": 1
       }
     }
   },
@@ -1454,6 +1519,16 @@
         "name": "Weezing",
         "gif": "http://www.pokestadium.com/sprites/xy/weezing.gif",
         "count": 1
+      },
+      "Gloom": {
+        "name": "Gloom",
+        "gif": "http://www.pokestadium.com/sprites/xy/gloom.gif",
+        "count": 1
+      },
+      "Jynx": {
+        "name": "Jynx",
+        "gif": "http://www.pokestadium.com/sprites/xy/jynx.gif",
+        "count": 1
       }
     }
   },
@@ -1502,6 +1577,16 @@
       "Venusaur": {
         "name": "Venusaur",
         "gif": "http://www.pokestadium.com/sprites/xy/venusaur.gif",
+        "count": 1
+      },
+      "Pidgeot": {
+        "name": "Pidgeot",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgeot.gif",
+        "count": 1
+      },
+      "Snorlax": {
+        "name": "Snorlax",
+        "gif": "http://www.pokestadium.com/sprites/xy/snorlax.gif",
         "count": 1
       }
     }
@@ -1565,6 +1650,16 @@
       "Abra": {
         "name": "Abra",
         "gif": "http://www.pokestadium.com/sprites/xy/abra.gif",
+        "count": 1
+      },
+      "Seadra": {
+        "name": "Seadra",
+        "gif": "http://www.pokestadium.com/sprites/xy/seadra.gif",
+        "count": 1
+      },
+      "Venomoth": {
+        "name": "Venomoth",
+        "gif": "http://www.pokestadium.com/sprites/xy/venomoth.gif",
         "count": 1
       }
     }
@@ -1635,6 +1730,16 @@
         "name": "Machamp",
         "gif": "http://www.pokestadium.com/sprites/xy/machamp.gif",
         "count": 1
+      },
+      "Tentacruel": {
+        "name": "Tentacruel",
+        "gif": "http://www.pokestadium.com/sprites/xy/tentacruel.gif",
+        "count": 1
+      },
+      "Jynx": {
+        "name": "Jynx",
+        "gif": "http://www.pokestadium.com/sprites/xy/jynx.gif",
+        "count": 1
       }
     }
   },
@@ -1681,6 +1786,11 @@
       "Nidoqueen": {
         "name": "Nidoqueen",
         "gif": "http://www.pokestadium.com/sprites/xy/nidoqueen.gif",
+        "count": 1
+      },
+      "Cloyster": {
+        "name": "Cloyster",
+        "gif": "http://www.pokestadium.com/sprites/xy/cloyster.gif",
         "count": 1
       }
     }
@@ -1790,6 +1900,21 @@
       "Pidgey": {
         "name": "Pidgey",
         "gif": "http://www.pokestadium.com/sprites/xy/pidgey.gif",
+        "count": 1
+      },
+      "Lapras": {
+        "name": "Lapras",
+        "gif": "http://www.pokestadium.com/sprites/xy/lapras.gif",
+        "count": 1
+      },
+      "Chansey": {
+        "name": "Chansey",
+        "gif": "http://www.pokestadium.com/sprites/xy/chansey.gif",
+        "count": 1
+      },
+      "Drowzee": {
+        "name": "Drowzee",
+        "gif": "http://www.pokestadium.com/sprites/xy/drowzee.gif",
         "count": 1
       }
     }
@@ -1983,6 +2108,16 @@
         "name": "Seadra",
         "gif": "http://www.pokestadium.com/sprites/xy/seadra.gif",
         "count": 1
+      },
+      "Poliwag": {
+        "name": "Poliwag",
+        "gif": "http://www.pokestadium.com/sprites/xy/poliwag.gif",
+        "count": 2
+      },
+      "Charmeleon": {
+        "name": "Charmeleon",
+        "gif": "http://www.pokestadium.com/sprites/xy/charmeleon.gif",
+        "count": 1
       }
     }
   },
@@ -2095,7 +2230,7 @@
       "Onix": {
         "name": "Onix",
         "gif": "http://www.pokestadium.com/sprites/xy/onix.gif",
-        "count": 1
+        "count": 2
       },
       "Magneton": {
         "name": "Magneton",
@@ -2191,6 +2326,21 @@
         "name": "Vileplume",
         "gif": "http://www.pokestadium.com/sprites/xy/vileplume.gif",
         "count": 1
+      },
+      "Charmeleon": {
+        "name": "Charmeleon",
+        "gif": "http://www.pokestadium.com/sprites/xy/charmeleon.gif",
+        "count": 1
+      },
+      "Ditto": {
+        "name": "Ditto",
+        "gif": "http://www.pokestadium.com/sprites/xy/ditto.gif",
+        "count": 1
+      },
+      "Kadabra": {
+        "name": "Kadabra",
+        "gif": "http://www.pokestadium.com/sprites/xy/kadabra.gif",
+        "count": 1
       }
     }
   },
@@ -2258,6 +2408,11 @@
       "Diglett": {
         "name": "Diglett",
         "gif": "http://www.pokestadium.com/sprites/xy/diglett.gif",
+        "count": 1
+      },
+      "Koffing": {
+        "name": "Koffing",
+        "gif": "http://www.pokestadium.com/sprites/xy/koffing.gif",
         "count": 1
       }
     }
@@ -2361,6 +2516,11 @@
       "Weedle": {
         "name": "Weedle",
         "gif": "http://www.pokestadium.com/sprites/xy/weedle.gif",
+        "count": 1
+      },
+      "Rapidash": {
+        "name": "Rapidash",
+        "gif": "http://www.pokestadium.com/sprites/xy/rapidash.gif",
         "count": 1
       }
     }
@@ -2471,6 +2631,21 @@
         "name": "Farfetch'd",
         "gif": "http://www.pokestadium.com/sprites/xy/farfetch'd.gif",
         "count": 1
+      },
+      "Flareon": {
+        "name": "Flareon",
+        "gif": "http://www.pokestadium.com/sprites/xy/flareon.gif",
+        "count": 1
+      },
+      "Alakazam": {
+        "name": "Alakazam",
+        "gif": "http://www.pokestadium.com/sprites/xy/alakazam.gif",
+        "count": 1
+      },
+      "Ninetales": {
+        "name": "Ninetales",
+        "gif": "http://www.pokestadium.com/sprites/xy/ninetales.gif",
+        "count": 1
       }
     }
   },
@@ -2509,6 +2684,16 @@
       "Wartortle": {
         "name": "Wartortle",
         "gif": "http://www.pokestadium.com/sprites/xy/wartortle.gif",
+        "count": 1
+      },
+      "Ekans": {
+        "name": "Ekans",
+        "gif": "http://www.pokestadium.com/sprites/xy/ekans.gif",
+        "count": 1
+      },
+      "Psyduck": {
+        "name": "Psyduck",
+        "gif": "http://www.pokestadium.com/sprites/xy/psyduck.gif",
         "count": 1
       }
     }
@@ -2599,6 +2784,11 @@
       "Abra": {
         "name": "Abra",
         "gif": "http://www.pokestadium.com/sprites/xy/abra.gif",
+        "count": 1
+      },
+      "Weepinbell": {
+        "name": "Weepinbell",
+        "gif": "http://www.pokestadium.com/sprites/xy/weepinbell.gif",
         "count": 1
       }
     }
@@ -2697,6 +2887,11 @@
         "name": "Bellsprout",
         "gif": "http://www.pokestadium.com/sprites/xy/bellsprout.gif",
         "count": 1
+      },
+      "Ekans": {
+        "name": "Ekans",
+        "gif": "http://www.pokestadium.com/sprites/xy/ekans.gif",
+        "count": 1
       }
     }
   },
@@ -2747,11 +2942,6 @@
         "gif": "http://www.pokestadium.com/sprites/xy/venomoth.gif",
         "count": 1
       },
-      "Clefable": {
-        "name": "Clefable",
-        "gif": "http://www.pokestadium.com/sprites/xy/clefable.gif",
-        "count": 1
-      },
       "Ekans": {
         "name": "Ekans",
         "gif": "http://www.pokestadium.com/sprites/xy/ekans.gif",
@@ -2770,6 +2960,16 @@
       "Marowak": {
         "name": "Marowak",
         "gif": "http://www.pokestadium.com/sprites/xy/marowak.gif",
+        "count": 1
+      },
+      "Snorlax": {
+        "name": "Snorlax",
+        "gif": "http://www.pokestadium.com/sprites/xy/snorlax.gif",
+        "count": 1
+      },
+      "Mewtwo": {
+        "name": "Mewtwo",
+        "gif": "http://www.pokestadium.com/sprites/xy/mewtwo.gif",
         "count": 1
       }
     }
@@ -2922,6 +3122,26 @@
         "name": "Ponyta",
         "gif": "http://www.pokestadium.com/sprites/xy/ponyta.gif",
         "count": 1
+      },
+      "Tentacool": {
+        "name": "Tentacool",
+        "gif": "http://www.pokestadium.com/sprites/xy/tentacool.gif",
+        "count": 1
+      },
+      "Haunter": {
+        "name": "Haunter",
+        "gif": "http://www.pokestadium.com/sprites/xy/haunter.gif",
+        "count": 1
+      },
+      "Cubone": {
+        "name": "Cubone",
+        "gif": "http://www.pokestadium.com/sprites/xy/cubone.gif",
+        "count": 1
+      },
+      "Primeape": {
+        "name": "Primeape",
+        "gif": "http://www.pokestadium.com/sprites/xy/primeape.gif",
+        "count": 1
       }
     }
   },
@@ -3045,6 +3265,11 @@
       "Ninetales": {
         "name": "Ninetales",
         "gif": "http://www.pokestadium.com/sprites/xy/ninetales.gif",
+        "count": 1
+      },
+      "Geodude": {
+        "name": "Geodude",
+        "gif": "http://www.pokestadium.com/sprites/xy/geodude.gif",
         "count": 1
       }
     }
@@ -3178,6 +3403,11 @@
         "name": "Kadabra",
         "gif": "http://www.pokestadium.com/sprites/xy/kadabra.gif",
         "count": 1
+      },
+      "Articuno": {
+        "name": "Articuno",
+        "gif": "http://www.pokestadium.com/sprites/xy/articuno.gif",
+        "count": 1
       }
     }
   },
@@ -3215,6 +3445,11 @@
       "Moltres": {
         "name": "Moltres",
         "gif": "http://www.pokestadium.com/sprites/xy/moltres.gif",
+        "count": 1
+      },
+      "Gloom": {
+        "name": "Gloom",
+        "gif": "http://www.pokestadium.com/sprites/xy/gloom.gif",
         "count": 1
       }
     }
@@ -3311,6 +3546,16 @@
         "name": "Scyther",
         "gif": "http://www.pokestadium.com/sprites/xy/scyther.gif",
         "count": 1
+      },
+      "Persian": {
+        "name": "Persian",
+        "gif": "http://www.pokestadium.com/sprites/xy/persian.gif",
+        "count": 1
+      },
+      "Starmie": {
+        "name": "Starmie",
+        "gif": "http://www.pokestadium.com/sprites/xy/starmie.gif",
+        "count": 1
       }
     }
   },
@@ -3333,6 +3578,11 @@
       "Golduck": {
         "name": "Golduck",
         "gif": "http://www.pokestadium.com/sprites/xy/golduck.gif",
+        "count": 1
+      },
+      "Lapras": {
+        "name": "Lapras",
+        "gif": "http://www.pokestadium.com/sprites/xy/lapras.gif",
         "count": 1
       }
     }
@@ -3376,6 +3626,11 @@
       "Wigglytuff": {
         "name": "Wigglytuff",
         "gif": "http://www.pokestadium.com/sprites/xy/wigglytuff.gif",
+        "count": 1
+      },
+      "Muk": {
+        "name": "Muk",
+        "gif": "http://www.pokestadium.com/sprites/xy/muk.gif",
         "count": 1
       }
     }
@@ -3515,6 +3770,16 @@
         "name": "Rapidash",
         "gif": "http://www.pokestadium.com/sprites/xy/rapidash.gif",
         "count": 1
+      },
+      "Lapras": {
+        "name": "Lapras",
+        "gif": "http://www.pokestadium.com/sprites/xy/lapras.gif",
+        "count": 1
+      },
+      "Golduck": {
+        "name": "Golduck",
+        "gif": "http://www.pokestadium.com/sprites/xy/golduck.gif",
+        "count": 1
       }
     }
   },
@@ -3552,6 +3817,11 @@
       "Primeape": {
         "name": "Primeape",
         "gif": "http://www.pokestadium.com/sprites/xy/primeape.gif",
+        "count": 1
+      },
+      "Exeggutor": {
+        "name": "Exeggutor",
+        "gif": "http://www.pokestadium.com/sprites/xy/exeggutor.gif",
         "count": 1
       }
     }
@@ -3814,6 +4084,16 @@
         "name": "Beedrill",
         "gif": "http://www.pokestadium.com/sprites/xy/beedrill.gif",
         "count": 1
+      },
+      "Raichu": {
+        "name": "Raichu",
+        "gif": "http://www.pokestadium.com/sprites/xy/raichu.gif",
+        "count": 1
+      },
+      "Omastar": {
+        "name": "Omastar",
+        "gif": "http://www.pokestadium.com/sprites/xy/omastar.gif",
+        "count": 1
       }
     }
   },
@@ -3862,6 +4142,11 @@
       "Rattata": {
         "name": "Rattata",
         "gif": "http://www.pokestadium.com/sprites/xy/rattata.gif",
+        "count": 1
+      },
+      "Raticate": {
+        "name": "Raticate",
+        "gif": "http://www.pokestadium.com/sprites/xy/raticate.gif",
         "count": 1
       }
     }
@@ -3992,6 +4277,26 @@
         "name": "Pikachu",
         "gif": "http://www.pokestadium.com/sprites/xy/pikachu.gif",
         "count": 1
+      },
+      "Nidoking": {
+        "name": "Nidoking",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidoking.gif",
+        "count": 1
+      },
+      "Ekans": {
+        "name": "Ekans",
+        "gif": "http://www.pokestadium.com/sprites/xy/ekans.gif",
+        "count": 1
+      },
+      "Pidgeot": {
+        "name": "Pidgeot",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgeot.gif",
+        "count": 1
+      },
+      "Scyther": {
+        "name": "Scyther",
+        "gif": "http://www.pokestadium.com/sprites/xy/scyther.gif",
+        "count": 1
       }
     }
   },
@@ -4111,6 +4416,16 @@
         "name": "Psyduck",
         "gif": "http://www.pokestadium.com/sprites/xy/psyduck.gif",
         "count": 1
+      },
+      "Butterfree": {
+        "name": "Butterfree",
+        "gif": "http://www.pokestadium.com/sprites/xy/butterfree.gif",
+        "count": 1
+      },
+      "Zapdos": {
+        "name": "Zapdos",
+        "gif": "http://www.pokestadium.com/sprites/xy/zapdos.gif",
+        "count": 1
       }
     }
   },
@@ -4217,6 +4532,16 @@
       "Nidorino": {
         "name": "Nidorino",
         "gif": "http://www.pokestadium.com/sprites/xy/nidorino.gif",
+        "count": 1
+      },
+      "Machop": {
+        "name": "Machop",
+        "gif": "http://www.pokestadium.com/sprites/xy/machop.gif",
+        "count": 1
+      },
+      "Poliwhirl": {
+        "name": "Poliwhirl",
+        "gif": "http://www.pokestadium.com/sprites/xy/poliwhirl.gif",
         "count": 1
       }
     }
@@ -4331,6 +4656,11 @@
         "name": "Lapras",
         "gif": "http://www.pokestadium.com/sprites/xy/lapras.gif",
         "count": 1
+      },
+      "Omastar": {
+        "name": "Omastar",
+        "gif": "http://www.pokestadium.com/sprites/xy/omastar.gif",
+        "count": 1
       }
     }
   },
@@ -4404,6 +4734,11 @@
         "name": "Omastar",
         "gif": "http://www.pokestadium.com/sprites/xy/omastar.gif",
         "count": 1
+      },
+      "Dodrio": {
+        "name": "Dodrio",
+        "gif": "http://www.pokestadium.com/sprites/xy/dodrio.gif",
+        "count": 1
       }
     }
   },
@@ -4432,7 +4767,7 @@
       "Omastar": {
         "name": "Omastar",
         "gif": "http://www.pokestadium.com/sprites/xy/omastar.gif",
-        "count": 1
+        "count": 2
       },
       "Krabby": {
         "name": "Krabby",
@@ -4447,6 +4782,16 @@
       "Magmar": {
         "name": "Magmar",
         "gif": "http://www.pokestadium.com/sprites/xy/magmar.gif",
+        "count": 1
+      },
+      "Poliwhirl": {
+        "name": "Poliwhirl",
+        "gif": "http://www.pokestadium.com/sprites/xy/poliwhirl.gif",
+        "count": 1
+      },
+      "Clefairy": {
+        "name": "Clefairy",
+        "gif": "http://www.pokestadium.com/sprites/xy/clefairy.gif",
         "count": 1
       }
     }
@@ -4501,6 +4846,16 @@
       "Ponyta": {
         "name": "Ponyta",
         "gif": "http://www.pokestadium.com/sprites/xy/ponyta.gif",
+        "count": 1
+      },
+      "Persian": {
+        "name": "Persian",
+        "gif": "http://www.pokestadium.com/sprites/xy/persian.gif",
+        "count": 1
+      },
+      "Hitmonlee": {
+        "name": "Hitmonlee",
+        "gif": "http://www.pokestadium.com/sprites/xy/hitmonlee.gif",
         "count": 1
       }
     }
@@ -4575,7 +4930,7 @@
       "Charmander": {
         "name": "Charmander",
         "gif": "http://www.pokestadium.com/sprites/xy/charmander.gif",
-        "count": 1
+        "count": 2
       },
       "Muk": {
         "name": "Muk",
@@ -4610,6 +4965,16 @@
       "Goldeen": {
         "name": "Goldeen",
         "gif": "http://www.pokestadium.com/sprites/xy/goldeen.gif",
+        "count": 1
+      },
+      "Seel": {
+        "name": "Seel",
+        "gif": "http://www.pokestadium.com/sprites/xy/seel.gif",
+        "count": 1
+      },
+      "Persian": {
+        "name": "Persian",
+        "gif": "http://www.pokestadium.com/sprites/xy/persian.gif",
         "count": 1
       }
     }
@@ -4712,7 +5077,7 @@
       "Horsea": {
         "name": "Horsea",
         "gif": "http://www.pokestadium.com/sprites/xy/horsea.gif",
-        "count": 1
+        "count": 2
       },
       "Kabuto": {
         "name": "Kabuto",
@@ -4758,6 +5123,11 @@
         "name": "Golbat",
         "gif": "http://www.pokestadium.com/sprites/xy/golbat.gif",
         "count": 1
+      },
+      "Venomoth": {
+        "name": "Venomoth",
+        "gif": "http://www.pokestadium.com/sprites/xy/venomoth.gif",
+        "count": 1
       }
     }
   },
@@ -4776,6 +5146,11 @@
       "Moltres": {
         "name": "Moltres",
         "gif": "http://www.pokestadium.com/sprites/xy/moltres.gif",
+        "count": 1
+      },
+      "Nidoqueen": {
+        "name": "Nidoqueen",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidoqueen.gif",
         "count": 1
       }
     }
@@ -4830,6 +5205,11 @@
       "Pidgey": {
         "name": "Pidgey",
         "gif": "http://www.pokestadium.com/sprites/xy/pidgey.gif",
+        "count": 1
+      },
+      "Cubone": {
+        "name": "Cubone",
+        "gif": "http://www.pokestadium.com/sprites/xy/cubone.gif",
         "count": 1
       }
     }
@@ -5010,6 +5390,11 @@
         "name": "Nidorino",
         "gif": "http://www.pokestadium.com/sprites/xy/nidorino.gif",
         "count": 1
+      },
+      "Goldeen": {
+        "name": "Goldeen",
+        "gif": "http://www.pokestadium.com/sprites/xy/goldeen.gif",
+        "count": 1
       }
     }
   },
@@ -5063,11 +5448,21 @@
       "Nidorino": {
         "name": "Nidorino",
         "gif": "http://www.pokestadium.com/sprites/xy/nidorino.gif",
-        "count": 1
+        "count": 2
       },
       "Horsea": {
         "name": "Horsea",
         "gif": "http://www.pokestadium.com/sprites/xy/horsea.gif",
+        "count": 1
+      },
+      "Mew": {
+        "name": "Mew",
+        "gif": "http://www.pokestadium.com/sprites/xy/mew.gif",
+        "count": 1
+      },
+      "Drowzee": {
+        "name": "Drowzee",
+        "gif": "http://www.pokestadium.com/sprites/xy/drowzee.gif",
         "count": 1
       }
     }
@@ -5123,6 +5518,11 @@
         "name": "Mewtwo",
         "gif": "http://www.pokestadium.com/sprites/xy/mewtwo.gif",
         "count": 1
+      },
+      "Nidoran": {
+        "name": "Nidoran",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidoran.gif",
+        "count": 1
       }
     }
   },
@@ -5161,6 +5561,11 @@
       "Grimer": {
         "name": "Grimer",
         "gif": "http://www.pokestadium.com/sprites/xy/grimer.gif",
+        "count": 1
+      },
+      "Ponyta": {
+        "name": "Ponyta",
+        "gif": "http://www.pokestadium.com/sprites/xy/ponyta.gif",
         "count": 1
       }
     }
@@ -5226,6 +5631,11 @@
         "name": "Onix",
         "gif": "http://www.pokestadium.com/sprites/xy/onix.gif",
         "count": 1
+      },
+      "Poliwhirl": {
+        "name": "Poliwhirl",
+        "gif": "http://www.pokestadium.com/sprites/xy/poliwhirl.gif",
+        "count": 1
       }
     }
   },
@@ -5249,7 +5659,7 @@
       "Mewtwo": {
         "name": "Mewtwo",
         "gif": "http://www.pokestadium.com/sprites/xy/mewtwo.gif",
-        "count": 1
+        "count": 2
       },
       "Goldeen": {
         "name": "Goldeen",
@@ -5495,6 +5905,16 @@
         "name": "Weezing",
         "gif": "http://www.pokestadium.com/sprites/xy/weezing.gif",
         "count": 1
+      },
+      "Slowpoke": {
+        "name": "Slowpoke",
+        "gif": "http://www.pokestadium.com/sprites/xy/slowpoke.gif",
+        "count": 1
+      },
+      "Jigglypuff": {
+        "name": "Jigglypuff",
+        "gif": "http://www.pokestadium.com/sprites/xy/jigglypuff.gif",
+        "count": 1
       }
     }
   },
@@ -5581,6 +6001,11 @@
       "Charmeleon": {
         "name": "Charmeleon",
         "gif": "http://www.pokestadium.com/sprites/xy/charmeleon.gif",
+        "count": 1
+      },
+      "Caterpie": {
+        "name": "Caterpie",
+        "gif": "http://www.pokestadium.com/sprites/xy/caterpie.gif",
         "count": 1
       }
     }
@@ -5750,6 +6175,11 @@
         "name": "Bellsprout",
         "gif": "http://www.pokestadium.com/sprites/xy/bellsprout.gif",
         "count": 1
+      },
+      "Golem": {
+        "name": "Golem",
+        "gif": "http://www.pokestadium.com/sprites/xy/golem.gif",
+        "count": 1
       }
     }
   },
@@ -5808,6 +6238,16 @@
       "Articuno": {
         "name": "Articuno",
         "gif": "http://www.pokestadium.com/sprites/xy/articuno.gif",
+        "count": 1
+      },
+      "Nidorina": {
+        "name": "Nidorina",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidorina.gif",
+        "count": 1
+      },
+      "Exeggutor": {
+        "name": "Exeggutor",
+        "gif": "http://www.pokestadium.com/sprites/xy/exeggutor.gif",
         "count": 1
       }
     }
@@ -5977,6 +6417,21 @@
         "name": "Zapdos",
         "gif": "http://www.pokestadium.com/sprites/xy/zapdos.gif",
         "count": 1
+      },
+      "Machoke": {
+        "name": "Machoke",
+        "gif": "http://www.pokestadium.com/sprites/xy/machoke.gif",
+        "count": 1
+      },
+      "Scyther": {
+        "name": "Scyther",
+        "gif": "http://www.pokestadium.com/sprites/xy/scyther.gif",
+        "count": 1
+      },
+      "Ekans": {
+        "name": "Ekans",
+        "gif": "http://www.pokestadium.com/sprites/xy/ekans.gif",
+        "count": 1
       }
     }
   },
@@ -6086,6 +6541,21 @@
         "name": "Nidorino",
         "gif": "http://www.pokestadium.com/sprites/xy/nidorino.gif",
         "count": 1
+      },
+      "Magnemite": {
+        "name": "Magnemite",
+        "gif": "http://www.pokestadium.com/sprites/xy/magnemite.gif",
+        "count": 1
+      },
+      "Victreebel": {
+        "name": "Victreebel",
+        "gif": "http://www.pokestadium.com/sprites/xy/victreebel.gif",
+        "count": 1
+      },
+      "Hitmonchan": {
+        "name": "Hitmonchan",
+        "gif": "http://www.pokestadium.com/sprites/xy/hitmonchan.gif",
+        "count": 1
       }
     }
   },
@@ -6109,6 +6579,11 @@
       "Exeggcute": {
         "name": "Exeggcute",
         "gif": "http://www.pokestadium.com/sprites/xy/exeggcute.gif",
+        "count": 1
+      },
+      "Starmie": {
+        "name": "Starmie",
+        "gif": "http://www.pokestadium.com/sprites/xy/starmie.gif",
         "count": 1
       }
     }
@@ -6209,6 +6684,21 @@
         "name": "Rattata",
         "gif": "http://www.pokestadium.com/sprites/xy/rattata.gif",
         "count": 1
+      },
+      "Staryu": {
+        "name": "Staryu",
+        "gif": "http://www.pokestadium.com/sprites/xy/staryu.gif",
+        "count": 1
+      },
+      "Horsea": {
+        "name": "Horsea",
+        "gif": "http://www.pokestadium.com/sprites/xy/horsea.gif",
+        "count": 1
+      },
+      "Nidoran?": {
+        "name": "Nidoran?",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidoran?.gif",
+        "count": 1
       }
     }
   },
@@ -6232,7 +6722,7 @@
       "Gyarados": {
         "name": "Gyarados",
         "gif": "http://www.pokestadium.com/sprites/xy/gyarados.gif",
-        "count": 1
+        "count": 2
       },
       "Geodude": {
         "name": "Geodude",
@@ -6262,7 +6752,7 @@
       "Poliwrath": {
         "name": "Poliwrath",
         "gif": "http://www.pokestadium.com/sprites/xy/poliwrath.gif",
-        "count": 1
+        "count": 2
       },
       "Starmie": {
         "name": "Starmie",
@@ -6312,7 +6802,7 @@
       "Weezing": {
         "name": "Weezing",
         "gif": "http://www.pokestadium.com/sprites/xy/weezing.gif",
-        "count": 1
+        "count": 2
       },
       "Gloom": {
         "name": "Gloom",
@@ -6368,6 +6858,11 @@
         "name": "Zubat",
         "gif": "http://www.pokestadium.com/sprites/xy/zubat.gif",
         "count": 1
+      },
+      "Golduck": {
+        "name": "Golduck",
+        "gif": "http://www.pokestadium.com/sprites/xy/golduck.gif",
+        "count": 1
       }
     }
   },
@@ -6421,6 +6916,31 @@
       "Venomoth": {
         "name": "Venomoth",
         "gif": "http://www.pokestadium.com/sprites/xy/venomoth.gif",
+        "count": 1
+      },
+      "Articuno": {
+        "name": "Articuno",
+        "gif": "http://www.pokestadium.com/sprites/xy/articuno.gif",
+        "count": 1
+      },
+      "Kingler": {
+        "name": "Kingler",
+        "gif": "http://www.pokestadium.com/sprites/xy/kingler.gif",
+        "count": 1
+      },
+      "Pidgey": {
+        "name": "Pidgey",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgey.gif",
+        "count": 2
+      },
+      "Poliwhirl": {
+        "name": "Poliwhirl",
+        "gif": "http://www.pokestadium.com/sprites/xy/poliwhirl.gif",
+        "count": 1
+      },
+      "Charmeleon": {
+        "name": "Charmeleon",
+        "gif": "http://www.pokestadium.com/sprites/xy/charmeleon.gif",
         "count": 1
       }
     }
@@ -6481,6 +7001,11 @@
         "name": "Nidoqueen",
         "gif": "http://www.pokestadium.com/sprites/xy/nidoqueen.gif",
         "count": 1
+      },
+      "Doduo": {
+        "name": "Doduo",
+        "gif": "http://www.pokestadium.com/sprites/xy/doduo.gif",
+        "count": 1
       }
     }
   },
@@ -6499,7 +7024,7 @@
       "Pidgeotto": {
         "name": "Pidgeotto",
         "gif": "http://www.pokestadium.com/sprites/xy/pidgeotto.gif",
-        "count": 1
+        "count": 2
       },
       "Victreebel": {
         "name": "Victreebel",
@@ -6549,6 +7074,31 @@
       "Ponyta": {
         "name": "Ponyta",
         "gif": "http://www.pokestadium.com/sprites/xy/ponyta.gif",
+        "count": 1
+      },
+      "Beedrill": {
+        "name": "Beedrill",
+        "gif": "http://www.pokestadium.com/sprites/xy/beedrill.gif",
+        "count": 1
+      },
+      "Paras": {
+        "name": "Paras",
+        "gif": "http://www.pokestadium.com/sprites/xy/paras.gif",
+        "count": 1
+      },
+      "Fearow": {
+        "name": "Fearow",
+        "gif": "http://www.pokestadium.com/sprites/xy/fearow.gif",
+        "count": 1
+      },
+      "Dragonite": {
+        "name": "Dragonite",
+        "gif": "http://www.pokestadium.com/sprites/xy/dragonite.gif",
+        "count": 1
+      },
+      "Pidgey": {
+        "name": "Pidgey",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgey.gif",
         "count": 1
       }
     }
@@ -6645,6 +7195,11 @@
         "name": "Venomoth",
         "gif": "http://www.pokestadium.com/sprites/xy/venomoth.gif",
         "count": 1
+      },
+      "Growlithe": {
+        "name": "Growlithe",
+        "gif": "http://www.pokestadium.com/sprites/xy/growlithe.gif",
+        "count": 1
       }
     }
   },
@@ -6734,6 +7289,21 @@
         "name": "Horsea",
         "gif": "http://www.pokestadium.com/sprites/xy/horsea.gif",
         "count": 1
+      },
+      "Kingler": {
+        "name": "Kingler",
+        "gif": "http://www.pokestadium.com/sprites/xy/kingler.gif",
+        "count": 1
+      },
+      "Dewgong": {
+        "name": "Dewgong",
+        "gif": "http://www.pokestadium.com/sprites/xy/dewgong.gif",
+        "count": 1
+      },
+      "Exeggutor": {
+        "name": "Exeggutor",
+        "gif": "http://www.pokestadium.com/sprites/xy/exeggutor.gif",
+        "count": 1
       }
     }
   },
@@ -6792,6 +7362,11 @@
         "name": "Ditto",
         "gif": "http://www.pokestadium.com/sprites/xy/ditto.gif",
         "count": 1
+      },
+      "Vulpix": {
+        "name": "Vulpix",
+        "gif": "http://www.pokestadium.com/sprites/xy/vulpix.gif",
+        "count": 1
       }
     }
   },
@@ -6810,7 +7385,7 @@
       "Snorlax": {
         "name": "Snorlax",
         "gif": "http://www.pokestadium.com/sprites/xy/snorlax.gif",
-        "count": 1
+        "count": 2
       },
       "Charizard": {
         "name": "Charizard",
@@ -6825,7 +7400,7 @@
       "Tangela": {
         "name": "Tangela",
         "gif": "http://www.pokestadium.com/sprites/xy/tangela.gif",
-        "count": 2
+        "count": 3
       },
       "Golem": {
         "name": "Golem",
@@ -6870,7 +7445,7 @@
       "Electabuzz": {
         "name": "Electabuzz",
         "gif": "http://www.pokestadium.com/sprites/xy/electabuzz.gif",
-        "count": 1
+        "count": 2
       },
       "Sandslash": {
         "name": "Sandslash",
@@ -6891,6 +7466,21 @@
         "name": "Butterfree",
         "gif": "http://www.pokestadium.com/sprites/xy/butterfree.gif",
         "count": 1
+      },
+      "Alakazam": {
+        "name": "Alakazam",
+        "gif": "http://www.pokestadium.com/sprites/xy/alakazam.gif",
+        "count": 1
+      },
+      "Seel": {
+        "name": "Seel",
+        "gif": "http://www.pokestadium.com/sprites/xy/seel.gif",
+        "count": 1
+      },
+      "Weezing": {
+        "name": "Weezing",
+        "gif": "http://www.pokestadium.com/sprites/xy/weezing.gif",
+        "count": 1
       }
     }
   },
@@ -6899,7 +7489,7 @@
       "Jolteon": {
         "name": "Jolteon",
         "gif": "http://www.pokestadium.com/sprites/xy/jolteon.gif",
-        "count": 1
+        "count": 2
       },
       "Poliwrath": {
         "name": "Poliwrath",
@@ -7030,6 +7620,36 @@
         "name": "Weepinbell",
         "gif": "http://www.pokestadium.com/sprites/xy/weepinbell.gif",
         "count": 1
+      },
+      "Primeape": {
+        "name": "Primeape",
+        "gif": "http://www.pokestadium.com/sprites/xy/primeape.gif",
+        "count": 1
+      },
+      "Psyduck": {
+        "name": "Psyduck",
+        "gif": "http://www.pokestadium.com/sprites/xy/psyduck.gif",
+        "count": 1
+      },
+      "Arcanine": {
+        "name": "Arcanine",
+        "gif": "http://www.pokestadium.com/sprites/xy/arcanine.gif",
+        "count": 1
+      },
+      "Horsea": {
+        "name": "Horsea",
+        "gif": "http://www.pokestadium.com/sprites/xy/horsea.gif",
+        "count": 1
+      },
+      "Pinsir": {
+        "name": "Pinsir",
+        "gif": "http://www.pokestadium.com/sprites/xy/pinsir.gif",
+        "count": 1
+      },
+      "Cubone": {
+        "name": "Cubone",
+        "gif": "http://www.pokestadium.com/sprites/xy/cubone.gif",
+        "count": 1
       }
     }
   },
@@ -7152,6 +7772,16 @@
       "Victreebel": {
         "name": "Victreebel",
         "gif": "http://www.pokestadium.com/sprites/xy/victreebel.gif",
+        "count": 1
+      },
+      "Pidgeotto": {
+        "name": "Pidgeotto",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgeotto.gif",
+        "count": 1
+      },
+      "Jynx": {
+        "name": "Jynx",
+        "gif": "http://www.pokestadium.com/sprites/xy/jynx.gif",
         "count": 1
       }
     }
@@ -7355,6 +7985,16 @@
         "name": "Weezing",
         "gif": "http://www.pokestadium.com/sprites/xy/weezing.gif",
         "count": 1
+      },
+      "Machamp": {
+        "name": "Machamp",
+        "gif": "http://www.pokestadium.com/sprites/xy/machamp.gif",
+        "count": 1
+      },
+      "Gengar": {
+        "name": "Gengar",
+        "gif": "http://www.pokestadium.com/sprites/xy/gengar.gif",
+        "count": 1
       }
     }
   },
@@ -7427,6 +8067,11 @@
         "name": "Omastar",
         "gif": "http://www.pokestadium.com/sprites/xy/omastar.gif",
         "count": 1
+      },
+      "Victreebel": {
+        "name": "Victreebel",
+        "gif": "http://www.pokestadium.com/sprites/xy/victreebel.gif",
+        "count": 1
       }
     }
   },
@@ -7486,6 +8131,11 @@
         "name": "Slowbro",
         "gif": "http://www.pokestadium.com/sprites/xy/slowbro.gif",
         "count": 1
+      },
+      "Lapras": {
+        "name": "Lapras",
+        "gif": "http://www.pokestadium.com/sprites/xy/lapras.gif",
+        "count": 1
       }
     }
   },
@@ -7509,6 +8159,11 @@
       "Onix": {
         "name": "Onix",
         "gif": "http://www.pokestadium.com/sprites/xy/onix.gif",
+        "count": 1
+      },
+      "Vulpix": {
+        "name": "Vulpix",
+        "gif": "http://www.pokestadium.com/sprites/xy/vulpix.gif",
         "count": 1
       }
     }
@@ -7647,6 +8302,36 @@
         "name": "Jynx",
         "gif": "http://www.pokestadium.com/sprites/xy/jynx.gif",
         "count": 1
+      },
+      "Onix": {
+        "name": "Onix",
+        "gif": "http://www.pokestadium.com/sprites/xy/onix.gif",
+        "count": 1
+      },
+      "Kakuna": {
+        "name": "Kakuna",
+        "gif": "http://www.pokestadium.com/sprites/xy/kakuna.gif",
+        "count": 1
+      },
+      "Sandshrew": {
+        "name": "Sandshrew",
+        "gif": "http://www.pokestadium.com/sprites/xy/sandshrew.gif",
+        "count": 1
+      },
+      "Venonat": {
+        "name": "Venonat",
+        "gif": "http://www.pokestadium.com/sprites/xy/venonat.gif",
+        "count": 1
+      },
+      "Victreebel": {
+        "name": "Victreebel",
+        "gif": "http://www.pokestadium.com/sprites/xy/victreebel.gif",
+        "count": 1
+      },
+      "Charmeleon": {
+        "name": "Charmeleon",
+        "gif": "http://www.pokestadium.com/sprites/xy/charmeleon.gif",
+        "count": 1
       }
     }
   },
@@ -7710,6 +8395,21 @@
       "Seadra": {
         "name": "Seadra",
         "gif": "http://www.pokestadium.com/sprites/xy/seadra.gif",
+        "count": 1
+      },
+      "Magneton": {
+        "name": "Magneton",
+        "gif": "http://www.pokestadium.com/sprites/xy/magneton.gif",
+        "count": 1
+      },
+      "Haunter": {
+        "name": "Haunter",
+        "gif": "http://www.pokestadium.com/sprites/xy/haunter.gif",
+        "count": 1
+      },
+      "Tentacruel": {
+        "name": "Tentacruel",
+        "gif": "http://www.pokestadium.com/sprites/xy/tentacruel.gif",
         "count": 1
       }
     }
@@ -7801,6 +8501,21 @@
       "Kabuto": {
         "name": "Kabuto",
         "gif": "http://www.pokestadium.com/sprites/xy/kabuto.gif",
+        "count": 1
+      },
+      "Chansey": {
+        "name": "Chansey",
+        "gif": "http://www.pokestadium.com/sprites/xy/chansey.gif",
+        "count": 1
+      },
+      "Weepinbell": {
+        "name": "Weepinbell",
+        "gif": "http://www.pokestadium.com/sprites/xy/weepinbell.gif",
+        "count": 1
+      },
+      "Horsea": {
+        "name": "Horsea",
+        "gif": "http://www.pokestadium.com/sprites/xy/horsea.gif",
         "count": 1
       }
     }
@@ -7954,6 +8669,41 @@
         "name": "Rattata",
         "gif": "http://www.pokestadium.com/sprites/xy/rattata.gif",
         "count": 1
+      },
+      "Primeape": {
+        "name": "Primeape",
+        "gif": "http://www.pokestadium.com/sprites/xy/primeape.gif",
+        "count": 1
+      },
+      "Charmeleon": {
+        "name": "Charmeleon",
+        "gif": "http://www.pokestadium.com/sprites/xy/charmeleon.gif",
+        "count": 1
+      },
+      "Wigglytuff": {
+        "name": "Wigglytuff",
+        "gif": "http://www.pokestadium.com/sprites/xy/wigglytuff.gif",
+        "count": 1
+      },
+      "Pidgeotto": {
+        "name": "Pidgeotto",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgeotto.gif",
+        "count": 1
+      },
+      "Omanyte": {
+        "name": "Omanyte",
+        "gif": "http://www.pokestadium.com/sprites/xy/omanyte.gif",
+        "count": 1
+      },
+      "Grimer": {
+        "name": "Grimer",
+        "gif": "http://www.pokestadium.com/sprites/xy/grimer.gif",
+        "count": 1
+      },
+      "Golem": {
+        "name": "Golem",
+        "gif": "http://www.pokestadium.com/sprites/xy/golem.gif",
+        "count": 1
       }
     }
   },
@@ -8023,6 +8773,26 @@
         "name": "Clefable",
         "gif": "http://www.pokestadium.com/sprites/xy/clefable.gif",
         "count": 1
+      },
+      "Gloom": {
+        "name": "Gloom",
+        "gif": "http://www.pokestadium.com/sprites/xy/gloom.gif",
+        "count": 1
+      },
+      "Victreebel": {
+        "name": "Victreebel",
+        "gif": "http://www.pokestadium.com/sprites/xy/victreebel.gif",
+        "count": 1
+      },
+      "Nidorina": {
+        "name": "Nidorina",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidorina.gif",
+        "count": 1
+      },
+      "Machoke": {
+        "name": "Machoke",
+        "gif": "http://www.pokestadium.com/sprites/xy/machoke.gif",
+        "count": 1
       }
     }
   },
@@ -8056,11 +8826,6 @@
       "Magikarp": {
         "name": "Magikarp",
         "gif": "http://www.pokestadium.com/sprites/xy/magikarp.gif",
-        "count": 1
-      },
-      "Chansey": {
-        "name": "Chansey",
-        "gif": "http://www.pokestadium.com/sprites/xy/chansey.gif",
         "count": 1
       },
       "Sandslash": {
@@ -8107,6 +8872,46 @@
         "name": "Persian",
         "gif": "http://www.pokestadium.com/sprites/xy/persian.gif",
         "count": 1
+      },
+      "Arcanine": {
+        "name": "Arcanine",
+        "gif": "http://www.pokestadium.com/sprites/xy/arcanine.gif",
+        "count": 1
+      },
+      "Rattata": {
+        "name": "Rattata",
+        "gif": "http://www.pokestadium.com/sprites/xy/rattata.gif",
+        "count": 1
+      },
+      "Raticate": {
+        "name": "Raticate",
+        "gif": "http://www.pokestadium.com/sprites/xy/raticate.gif",
+        "count": 1
+      },
+      "Dragonair": {
+        "name": "Dragonair",
+        "gif": "http://www.pokestadium.com/sprites/xy/dragonair.gif",
+        "count": 1
+      },
+      "Dewgong": {
+        "name": "Dewgong",
+        "gif": "http://www.pokestadium.com/sprites/xy/dewgong.gif",
+        "count": 1
+      },
+      "Psyduck": {
+        "name": "Psyduck",
+        "gif": "http://www.pokestadium.com/sprites/xy/psyduck.gif",
+        "count": 1
+      },
+      "Charmander": {
+        "name": "Charmander",
+        "gif": "http://www.pokestadium.com/sprites/xy/charmander.gif",
+        "count": 1
+      },
+      "Nidoran?": {
+        "name": "Nidoran?",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidoran?.gif",
+        "count": 1
       }
     }
   },
@@ -8140,7 +8945,7 @@
       "Doduo": {
         "name": "Doduo",
         "gif": "http://www.pokestadium.com/sprites/xy/doduo.gif",
-        "count": 1
+        "count": 2
       },
       "Slowpoke": {
         "name": "Slowpoke",
@@ -8150,6 +8955,31 @@
       "Kingler": {
         "name": "Kingler",
         "gif": "http://www.pokestadium.com/sprites/xy/kingler.gif",
+        "count": 1
+      },
+      "Psyduck": {
+        "name": "Psyduck",
+        "gif": "http://www.pokestadium.com/sprites/xy/psyduck.gif",
+        "count": 1
+      },
+      "Dugtrio": {
+        "name": "Dugtrio",
+        "gif": "http://www.pokestadium.com/sprites/xy/dugtrio.gif",
+        "count": 1
+      },
+      "Parasect": {
+        "name": "Parasect",
+        "gif": "http://www.pokestadium.com/sprites/xy/parasect.gif",
+        "count": 1
+      },
+      "Metapod": {
+        "name": "Metapod",
+        "gif": "http://www.pokestadium.com/sprites/xy/metapod.gif",
+        "count": 1
+      },
+      "Haunter": {
+        "name": "Haunter",
+        "gif": "http://www.pokestadium.com/sprites/xy/haunter.gif",
         "count": 1
       }
     }
@@ -8178,7 +9008,7 @@
       "Goldeen": {
         "name": "Goldeen",
         "gif": "http://www.pokestadium.com/sprites/xy/goldeen.gif",
-        "count": 1
+        "count": 2
       },
       "Haunter": {
         "name": "Haunter",
@@ -8279,6 +9109,21 @@
         "name": "Koffing",
         "gif": "http://www.pokestadium.com/sprites/xy/koffing.gif",
         "count": 1
+      },
+      "Venomoth": {
+        "name": "Venomoth",
+        "gif": "http://www.pokestadium.com/sprites/xy/venomoth.gif",
+        "count": 2
+      },
+      "Farfetch'd": {
+        "name": "Farfetch'd",
+        "gif": "http://www.pokestadium.com/sprites/xy/farfetch'd.gif",
+        "count": 1
+      },
+      "Rapidash": {
+        "name": "Rapidash",
+        "gif": "http://www.pokestadium.com/sprites/xy/rapidash.gif",
+        "count": 1
       }
     }
   },
@@ -8334,14 +9179,29 @@
         "gif": "http://www.pokestadium.com/sprites/xy/abra.gif",
         "count": 1
       },
-      "Snorlax": {
-        "name": "Snorlax",
-        "gif": "http://www.pokestadium.com/sprites/xy/snorlax.gif",
-        "count": 1
-      },
       "Seel": {
         "name": "Seel",
         "gif": "http://www.pokestadium.com/sprites/xy/seel.gif",
+        "count": 1
+      },
+      "Clefable": {
+        "name": "Clefable",
+        "gif": "http://www.pokestadium.com/sprites/xy/clefable.gif",
+        "count": 1
+      },
+      "Mr. Mime": {
+        "name": "Mr. Mime",
+        "gif": "http://www.pokestadium.com/sprites/xy/mr. mime.gif",
+        "count": 1
+      },
+      "Jigglypuff": {
+        "name": "Jigglypuff",
+        "gif": "http://www.pokestadium.com/sprites/xy/jigglypuff.gif",
+        "count": 1
+      },
+      "Slowpoke": {
+        "name": "Slowpoke",
+        "gif": "http://www.pokestadium.com/sprites/xy/slowpoke.gif",
         "count": 1
       }
     }
@@ -8366,6 +9226,11 @@
       "Lickitung": {
         "name": "Lickitung",
         "gif": "http://www.pokestadium.com/sprites/xy/lickitung.gif",
+        "count": 1
+      },
+      "Wartortle": {
+        "name": "Wartortle",
+        "gif": "http://www.pokestadium.com/sprites/xy/wartortle.gif",
         "count": 1
       }
     }
@@ -8410,7 +9275,7 @@
       "Parasect": {
         "name": "Parasect",
         "gif": "http://www.pokestadium.com/sprites/xy/parasect.gif",
-        "count": 1
+        "count": 2
       },
       "Venomoth": {
         "name": "Venomoth",
@@ -8426,6 +9291,26 @@
         "name": "Clefable",
         "gif": "http://www.pokestadium.com/sprites/xy/clefable.gif",
         "count": 1
+      },
+      "Pikachu": {
+        "name": "Pikachu",
+        "gif": "http://www.pokestadium.com/sprites/xy/pikachu.gif",
+        "count": 1
+      },
+      "Gastly": {
+        "name": "Gastly",
+        "gif": "http://www.pokestadium.com/sprites/xy/gastly.gif",
+        "count": 1
+      },
+      "Porygon": {
+        "name": "Porygon",
+        "gif": "http://www.pokestadium.com/sprites/xy/porygon.gif",
+        "count": 1
+      },
+      "Lickitung": {
+        "name": "Lickitung",
+        "gif": "http://www.pokestadium.com/sprites/xy/lickitung.gif",
+        "count": 1
       }
     }
   },
@@ -8439,6 +9324,11 @@
       "Meowth": {
         "name": "Meowth",
         "gif": "http://www.pokestadium.com/sprites/xy/meowth.gif",
+        "count": 1
+      },
+      "Charmander": {
+        "name": "Charmander",
+        "gif": "http://www.pokestadium.com/sprites/xy/charmander.gif",
         "count": 1
       }
     }
@@ -8473,7 +9363,7 @@
       "Kadabra": {
         "name": "Kadabra",
         "gif": "http://www.pokestadium.com/sprites/xy/kadabra.gif",
-        "count": 1
+        "count": 2
       },
       "Nidoking": {
         "name": "Nidoking",
@@ -8493,6 +9383,11 @@
       "Dragonite": {
         "name": "Dragonite",
         "gif": "http://www.pokestadium.com/sprites/xy/dragonite.gif",
+        "count": 1
+      },
+      "Squirtle": {
+        "name": "Squirtle",
+        "gif": "http://www.pokestadium.com/sprites/xy/squirtle.gif",
         "count": 1
       }
     }
@@ -8611,6 +9506,16 @@
         "name": "Rattata",
         "gif": "http://www.pokestadium.com/sprites/xy/rattata.gif",
         "count": 1
+      },
+      "Flareon": {
+        "name": "Flareon",
+        "gif": "http://www.pokestadium.com/sprites/xy/flareon.gif",
+        "count": 1
+      },
+      "Wigglytuff": {
+        "name": "Wigglytuff",
+        "gif": "http://www.pokestadium.com/sprites/xy/wigglytuff.gif",
+        "count": 1
       }
     }
   },
@@ -8624,6 +9529,11 @@
       "Gloom": {
         "name": "Gloom",
         "gif": "http://www.pokestadium.com/sprites/xy/gloom.gif",
+        "count": 1
+      },
+      "Vaporeon": {
+        "name": "Vaporeon",
+        "gif": "http://www.pokestadium.com/sprites/xy/vaporeon.gif",
         "count": 1
       }
     }
@@ -8643,6 +9553,11 @@
       "Magnemite": {
         "name": "Magnemite",
         "gif": "http://www.pokestadium.com/sprites/xy/magnemite.gif",
+        "count": 1
+      },
+      "Krabby": {
+        "name": "Krabby",
+        "gif": "http://www.pokestadium.com/sprites/xy/krabby.gif",
         "count": 1
       }
     }
@@ -8703,6 +9618,41 @@
         "name": "Pikachu",
         "gif": "http://www.pokestadium.com/sprites/xy/pikachu.gif",
         "count": 1
+      },
+      "Ponyta": {
+        "name": "Ponyta",
+        "gif": "http://www.pokestadium.com/sprites/xy/ponyta.gif",
+        "count": 1
+      },
+      "Goldeen": {
+        "name": "Goldeen",
+        "gif": "http://www.pokestadium.com/sprites/xy/goldeen.gif",
+        "count": 1
+      },
+      "Magmar": {
+        "name": "Magmar",
+        "gif": "http://www.pokestadium.com/sprites/xy/magmar.gif",
+        "count": 1
+      },
+      "Pidgey": {
+        "name": "Pidgey",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgey.gif",
+        "count": 1
+      },
+      "Jigglypuff": {
+        "name": "Jigglypuff",
+        "gif": "http://www.pokestadium.com/sprites/xy/jigglypuff.gif",
+        "count": 1
+      },
+      "Grimer": {
+        "name": "Grimer",
+        "gif": "http://www.pokestadium.com/sprites/xy/grimer.gif",
+        "count": 1
+      },
+      "Ditto": {
+        "name": "Ditto",
+        "gif": "http://www.pokestadium.com/sprites/xy/ditto.gif",
+        "count": 1
       }
     }
   },
@@ -8720,6 +9670,11 @@
       "Exeggutor": {
         "name": "Exeggutor",
         "gif": "http://www.pokestadium.com/sprites/xy/exeggutor.gif",
+        "count": 1
+      },
+      "Venusaur": {
+        "name": "Venusaur",
+        "gif": "http://www.pokestadium.com/sprites/xy/venusaur.gif",
         "count": 1
       }
     }
@@ -8783,11 +9738,16 @@
       "Paras": {
         "name": "Paras",
         "gif": "http://www.pokestadium.com/sprites/xy/paras.gif",
-        "count": 1
+        "count": 2
       },
       "Horsea": {
         "name": "Horsea",
         "gif": "http://www.pokestadium.com/sprites/xy/horsea.gif",
+        "count": 1
+      },
+      "Weedle": {
+        "name": "Weedle",
+        "gif": "http://www.pokestadium.com/sprites/xy/weedle.gif",
         "count": 1
       }
     }
@@ -8825,6 +9785,11 @@
       "Koffing": {
         "name": "Koffing",
         "gif": "http://www.pokestadium.com/sprites/xy/koffing.gif",
+        "count": 1
+      },
+      "Dodrio": {
+        "name": "Dodrio",
+        "gif": "http://www.pokestadium.com/sprites/xy/dodrio.gif",
         "count": 1
       }
     }
@@ -9145,6 +10110,46 @@
         "name": "Seaking",
         "gif": "http://www.pokestadium.com/sprites/xy/seaking.gif",
         "count": 1
+      },
+      "Snorlax": {
+        "name": "Snorlax",
+        "gif": "http://www.pokestadium.com/sprites/xy/snorlax.gif",
+        "count": 1
+      },
+      "Gastly": {
+        "name": "Gastly",
+        "gif": "http://www.pokestadium.com/sprites/xy/gastly.gif",
+        "count": 1
+      },
+      "Growlithe": {
+        "name": "Growlithe",
+        "gif": "http://www.pokestadium.com/sprites/xy/growlithe.gif",
+        "count": 1
+      },
+      "Golduck": {
+        "name": "Golduck",
+        "gif": "http://www.pokestadium.com/sprites/xy/golduck.gif",
+        "count": 1
+      },
+      "Electabuzz": {
+        "name": "Electabuzz",
+        "gif": "http://www.pokestadium.com/sprites/xy/electabuzz.gif",
+        "count": 1
+      },
+      "Arbok": {
+        "name": "Arbok",
+        "gif": "http://www.pokestadium.com/sprites/xy/arbok.gif",
+        "count": 1
+      },
+      "Jynx": {
+        "name": "Jynx",
+        "gif": "http://www.pokestadium.com/sprites/xy/jynx.gif",
+        "count": 1
+      },
+      "Pinsir": {
+        "name": "Pinsir",
+        "gif": "http://www.pokestadium.com/sprites/xy/pinsir.gif",
+        "count": 1
       }
     }
   },
@@ -9206,6 +10211,11 @@
       "Pidgey": {
         "name": "Pidgey",
         "gif": "http://www.pokestadium.com/sprites/xy/pidgey.gif",
+        "count": 2
+      },
+      "Snorlax": {
+        "name": "Snorlax",
+        "gif": "http://www.pokestadium.com/sprites/xy/snorlax.gif",
         "count": 1
       }
     }
@@ -9220,6 +10230,11 @@
       "Omastar": {
         "name": "Omastar",
         "gif": "http://www.pokestadium.com/sprites/xy/omastar.gif",
+        "count": 1
+      },
+      "Grimer": {
+        "name": "Grimer",
+        "gif": "http://www.pokestadium.com/sprites/xy/grimer.gif",
         "count": 1
       }
     }
@@ -9265,6 +10280,16 @@
         "name": "Charizard",
         "gif": "http://www.pokestadium.com/sprites/xy/charizard.gif",
         "count": 1
+      },
+      "Hypno": {
+        "name": "Hypno",
+        "gif": "http://www.pokestadium.com/sprites/xy/hypno.gif",
+        "count": 2
+      },
+      "Slowbro": {
+        "name": "Slowbro",
+        "gif": "http://www.pokestadium.com/sprites/xy/slowbro.gif",
+        "count": 1
       }
     }
   },
@@ -9303,6 +10328,11 @@
       "Dugtrio": {
         "name": "Dugtrio",
         "gif": "http://www.pokestadium.com/sprites/xy/dugtrio.gif",
+        "count": 1
+      },
+      "Flareon": {
+        "name": "Flareon",
+        "gif": "http://www.pokestadium.com/sprites/xy/flareon.gif",
         "count": 1
       }
     }
@@ -9350,7 +10380,7 @@
       "Lickitung": {
         "name": "Lickitung",
         "gif": "http://www.pokestadium.com/sprites/xy/lickitung.gif",
-        "count": 1
+        "count": 2
       },
       "Dragonair": {
         "name": "Dragonair",
@@ -9389,6 +10419,11 @@
       "Nidoran": {
         "name": "Nidoran",
         "gif": "http://www.pokestadium.com/sprites/xy/nidoran.gif",
+        "count": 1
+      },
+      "Jolteon": {
+        "name": "Jolteon",
+        "gif": "http://www.pokestadium.com/sprites/xy/jolteon.gif",
         "count": 1
       }
     }
@@ -9438,6 +10473,21 @@
         "name": "Scyther",
         "gif": "http://www.pokestadium.com/sprites/xy/scyther.gif",
         "count": 1
+      },
+      "Poliwrath": {
+        "name": "Poliwrath",
+        "gif": "http://www.pokestadium.com/sprites/xy/poliwrath.gif",
+        "count": 1
+      },
+      "Blastoise": {
+        "name": "Blastoise",
+        "gif": "http://www.pokestadium.com/sprites/xy/blastoise.gif",
+        "count": 1
+      },
+      "Raticate": {
+        "name": "Raticate",
+        "gif": "http://www.pokestadium.com/sprites/xy/raticate.gif",
+        "count": 1
       }
     }
   },
@@ -9466,6 +10516,11 @@
         "name": "Seaking",
         "gif": "http://www.pokestadium.com/sprites/xy/seaking.gif",
         "count": 1
+      },
+      "Marowak": {
+        "name": "Marowak",
+        "gif": "http://www.pokestadium.com/sprites/xy/marowak.gif",
+        "count": 1
       }
     }
   },
@@ -9489,6 +10544,11 @@
       "Sandslash": {
         "name": "Sandslash",
         "gif": "http://www.pokestadium.com/sprites/xy/sandslash.gif",
+        "count": 1
+      },
+      "Rapidash": {
+        "name": "Rapidash",
+        "gif": "http://www.pokestadium.com/sprites/xy/rapidash.gif",
         "count": 1
       }
     }
@@ -9538,6 +10598,11 @@
       "Vulpix": {
         "name": "Vulpix",
         "gif": "http://www.pokestadium.com/sprites/xy/vulpix.gif",
+        "count": 1
+      },
+      "Graveler": {
+        "name": "Graveler",
+        "gif": "http://www.pokestadium.com/sprites/xy/graveler.gif",
         "count": 1
       }
     }
@@ -9602,6 +10667,26 @@
         "name": "Poliwag",
         "gif": "http://www.pokestadium.com/sprites/xy/poliwag.gif",
         "count": 1
+      },
+      "Exeggutor": {
+        "name": "Exeggutor",
+        "gif": "http://www.pokestadium.com/sprites/xy/exeggutor.gif",
+        "count": 1
+      },
+      "Kabuto": {
+        "name": "Kabuto",
+        "gif": "http://www.pokestadium.com/sprites/xy/kabuto.gif",
+        "count": 1
+      },
+      "Sandshrew": {
+        "name": "Sandshrew",
+        "gif": "http://www.pokestadium.com/sprites/xy/sandshrew.gif",
+        "count": 1
+      },
+      "Pidgey": {
+        "name": "Pidgey",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgey.gif",
+        "count": 1
       }
     }
   },
@@ -9644,11 +10729,31 @@
       "Drowzee": {
         "name": "Drowzee",
         "gif": "http://www.pokestadium.com/sprites/xy/drowzee.gif",
-        "count": 1
+        "count": 2
       },
       "Squirtle": {
         "name": "Squirtle",
         "gif": "http://www.pokestadium.com/sprites/xy/squirtle.gif",
+        "count": 1
+      },
+      "Oddish": {
+        "name": "Oddish",
+        "gif": "http://www.pokestadium.com/sprites/xy/oddish.gif",
+        "count": 1
+      },
+      "Caterpie": {
+        "name": "Caterpie",
+        "gif": "http://www.pokestadium.com/sprites/xy/caterpie.gif",
+        "count": 1
+      },
+      "Growlithe": {
+        "name": "Growlithe",
+        "gif": "http://www.pokestadium.com/sprites/xy/growlithe.gif",
+        "count": 1
+      },
+      "Butterfree": {
+        "name": "Butterfree",
+        "gif": "http://www.pokestadium.com/sprites/xy/butterfree.gif",
         "count": 1
       }
     }
@@ -9694,6 +10799,21 @@
         "name": "Wartortle",
         "gif": "http://www.pokestadium.com/sprites/xy/wartortle.gif",
         "count": 1
+      },
+      "Electrode": {
+        "name": "Electrode",
+        "gif": "http://www.pokestadium.com/sprites/xy/electrode.gif",
+        "count": 1
+      },
+      "Rapidash": {
+        "name": "Rapidash",
+        "gif": "http://www.pokestadium.com/sprites/xy/rapidash.gif",
+        "count": 1
+      },
+      "Dragonite": {
+        "name": "Dragonite",
+        "gif": "http://www.pokestadium.com/sprites/xy/dragonite.gif",
+        "count": 1
       }
     }
   },
@@ -9707,6 +10827,11 @@
       "Rattata": {
         "name": "Rattata",
         "gif": "http://www.pokestadium.com/sprites/xy/rattata.gif",
+        "count": 1
+      },
+      "Dodrio": {
+        "name": "Dodrio",
+        "gif": "http://www.pokestadium.com/sprites/xy/dodrio.gif",
         "count": 1
       }
     }
@@ -9731,6 +10856,16 @@
         "name": "Rhyhorn",
         "gif": "http://www.pokestadium.com/sprites/xy/rhyhorn.gif",
         "count": 1
+      },
+      "Omastar": {
+        "name": "Omastar",
+        "gif": "http://www.pokestadium.com/sprites/xy/omastar.gif",
+        "count": 1
+      },
+      "Poliwrath": {
+        "name": "Poliwrath",
+        "gif": "http://www.pokestadium.com/sprites/xy/poliwrath.gif",
+        "count": 1
       }
     }
   },
@@ -9754,11 +10889,16 @@
       "Magnemite": {
         "name": "Magnemite",
         "gif": "http://www.pokestadium.com/sprites/xy/magnemite.gif",
-        "count": 1
+        "count": 2
       },
       "Seadra": {
         "name": "Seadra",
         "gif": "http://www.pokestadium.com/sprites/xy/seadra.gif",
+        "count": 1
+      },
+      "Arcanine": {
+        "name": "Arcanine",
+        "gif": "http://www.pokestadium.com/sprites/xy/arcanine.gif",
         "count": 1
       }
     }
@@ -9811,6 +10951,21 @@
         "name": "Charmeleon",
         "gif": "http://www.pokestadium.com/sprites/xy/charmeleon.gif",
         "count": 1
+      },
+      "Nidoran?": {
+        "name": "Nidoran?",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidoran?.gif",
+        "count": 1
+      },
+      "Rhydon": {
+        "name": "Rhydon",
+        "gif": "http://www.pokestadium.com/sprites/xy/rhydon.gif",
+        "count": 1
+      },
+      "Omastar": {
+        "name": "Omastar",
+        "gif": "http://www.pokestadium.com/sprites/xy/omastar.gif",
+        "count": 1
       }
     }
   },
@@ -9825,6 +10980,21 @@
         "name": "Moltres",
         "gif": "http://www.pokestadium.com/sprites/xy/moltres.gif",
         "count": 1
+      },
+      "Onix": {
+        "name": "Onix",
+        "gif": "http://www.pokestadium.com/sprites/xy/onix.gif",
+        "count": 1
+      },
+      "Koffing": {
+        "name": "Koffing",
+        "gif": "http://www.pokestadium.com/sprites/xy/koffing.gif",
+        "count": 1
+      },
+      "Rattata": {
+        "name": "Rattata",
+        "gif": "http://www.pokestadium.com/sprites/xy/rattata.gif",
+        "count": 1
       }
     }
   },
@@ -9838,7 +11008,7 @@
       "Sandshrew": {
         "name": "Sandshrew",
         "gif": "http://www.pokestadium.com/sprites/xy/sandshrew.gif",
-        "count": 1
+        "count": 2
       },
       "Zubat": {
         "name": "Zubat",
@@ -9853,6 +11023,16 @@
       "Machamp": {
         "name": "Machamp",
         "gif": "http://www.pokestadium.com/sprites/xy/machamp.gif",
+        "count": 1
+      },
+      "Rattata": {
+        "name": "Rattata",
+        "gif": "http://www.pokestadium.com/sprites/xy/rattata.gif",
+        "count": 1
+      },
+      "Snorlax": {
+        "name": "Snorlax",
+        "gif": "http://www.pokestadium.com/sprites/xy/snorlax.gif",
         "count": 1
       }
     }
@@ -9909,6 +11089,11 @@
         "name": "Gastly",
         "gif": "http://www.pokestadium.com/sprites/xy/gastly.gif",
         "count": 1
+      },
+      "Charizard": {
+        "name": "Charizard",
+        "gif": "http://www.pokestadium.com/sprites/xy/charizard.gif",
+        "count": 1
       }
     }
   },
@@ -9928,6 +11113,11 @@
         "name": "Ninetales",
         "gif": "http://www.pokestadium.com/sprites/xy/ninetales.gif",
         "count": 1
+      },
+      "Tauros": {
+        "name": "Tauros",
+        "gif": "http://www.pokestadium.com/sprites/xy/tauros.gif",
+        "count": 2
       }
     }
   },
@@ -10016,6 +11206,11 @@
         "name": "Nidoking",
         "gif": "http://www.pokestadium.com/sprites/xy/nidoking.gif",
         "count": 1
+      },
+      "Jolteon": {
+        "name": "Jolteon",
+        "gif": "http://www.pokestadium.com/sprites/xy/jolteon.gif",
+        "count": 1
       }
     }
   },
@@ -10024,6 +11219,11 @@
       "Tentacool": {
         "name": "Tentacool",
         "gif": "http://www.pokestadium.com/sprites/xy/tentacool.gif",
+        "count": 1
+      },
+      "Dodrio": {
+        "name": "Dodrio",
+        "gif": "http://www.pokestadium.com/sprites/xy/dodrio.gif",
         "count": 1
       }
     }
@@ -10059,6 +11259,21 @@
         "name": "Kakuna",
         "gif": "http://www.pokestadium.com/sprites/xy/kakuna.gif",
         "count": 1
+      },
+      "Scyther": {
+        "name": "Scyther",
+        "gif": "http://www.pokestadium.com/sprites/xy/scyther.gif",
+        "count": 1
+      },
+      "Marowak": {
+        "name": "Marowak",
+        "gif": "http://www.pokestadium.com/sprites/xy/marowak.gif",
+        "count": 1
+      },
+      "Golbat": {
+        "name": "Golbat",
+        "gif": "http://www.pokestadium.com/sprites/xy/golbat.gif",
+        "count": 1
       }
     }
   },
@@ -10077,6 +11292,21 @@
       "Arcanine": {
         "name": "Arcanine",
         "gif": "http://www.pokestadium.com/sprites/xy/arcanine.gif",
+        "count": 1
+      },
+      "Zapdos": {
+        "name": "Zapdos",
+        "gif": "http://www.pokestadium.com/sprites/xy/zapdos.gif",
+        "count": 1
+      },
+      "Kabuto": {
+        "name": "Kabuto",
+        "gif": "http://www.pokestadium.com/sprites/xy/kabuto.gif",
+        "count": 1
+      },
+      "Tentacruel": {
+        "name": "Tentacruel",
+        "gif": "http://www.pokestadium.com/sprites/xy/tentacruel.gif",
         "count": 1
       }
     }
@@ -10106,6 +11336,21 @@
       "Seadra": {
         "name": "Seadra",
         "gif": "http://www.pokestadium.com/sprites/xy/seadra.gif",
+        "count": 1
+      },
+      "Weedle": {
+        "name": "Weedle",
+        "gif": "http://www.pokestadium.com/sprites/xy/weedle.gif",
+        "count": 1
+      },
+      "Beedrill": {
+        "name": "Beedrill",
+        "gif": "http://www.pokestadium.com/sprites/xy/beedrill.gif",
+        "count": 1
+      },
+      "Lapras": {
+        "name": "Lapras",
+        "gif": "http://www.pokestadium.com/sprites/xy/lapras.gif",
         "count": 1
       }
     }
@@ -10176,6 +11421,11 @@
         "name": "Dodrio",
         "gif": "http://www.pokestadium.com/sprites/xy/dodrio.gif",
         "count": 1
+      },
+      "Golduck": {
+        "name": "Golduck",
+        "gif": "http://www.pokestadium.com/sprites/xy/golduck.gif",
+        "count": 1
       }
     }
   },
@@ -10184,6 +11434,11 @@
       "Cloyster": {
         "name": "Cloyster",
         "gif": "http://www.pokestadium.com/sprites/xy/cloyster.gif",
+        "count": 1
+      },
+      "Charmeleon": {
+        "name": "Charmeleon",
+        "gif": "http://www.pokestadium.com/sprites/xy/charmeleon.gif",
         "count": 1
       }
     }
@@ -10198,6 +11453,21 @@
       "Lapras": {
         "name": "Lapras",
         "gif": "http://www.pokestadium.com/sprites/xy/lapras.gif",
+        "count": 1
+      },
+      "Weezing": {
+        "name": "Weezing",
+        "gif": "http://www.pokestadium.com/sprites/xy/weezing.gif",
+        "count": 1
+      },
+      "Charmander": {
+        "name": "Charmander",
+        "gif": "http://www.pokestadium.com/sprites/xy/charmander.gif",
+        "count": 1
+      },
+      "Venomoth": {
+        "name": "Venomoth",
+        "gif": "http://www.pokestadium.com/sprites/xy/venomoth.gif",
         "count": 1
       }
     }
@@ -10267,6 +11537,16 @@
         "name": "Vulpix",
         "gif": "http://www.pokestadium.com/sprites/xy/vulpix.gif",
         "count": 1
+      },
+      "Primeape": {
+        "name": "Primeape",
+        "gif": "http://www.pokestadium.com/sprites/xy/primeape.gif",
+        "count": 1
+      },
+      "Chansey": {
+        "name": "Chansey",
+        "gif": "http://www.pokestadium.com/sprites/xy/chansey.gif",
+        "count": 1
       }
     }
   },
@@ -10313,6 +11593,16 @@
         "name": "Articuno",
         "gif": "http://www.pokestadium.com/sprites/xy/articuno.gif",
         "count": 1
+      },
+      "Goldeen": {
+        "name": "Goldeen",
+        "gif": "http://www.pokestadium.com/sprites/xy/goldeen.gif",
+        "count": 1
+      },
+      "Mankey": {
+        "name": "Mankey",
+        "gif": "http://www.pokestadium.com/sprites/xy/mankey.gif",
+        "count": 1
       }
     }
   },
@@ -10326,6 +11616,21 @@
       "Fearow": {
         "name": "Fearow",
         "gif": "http://www.pokestadium.com/sprites/xy/fearow.gif",
+        "count": 1
+      },
+      "Porygon": {
+        "name": "Porygon",
+        "gif": "http://www.pokestadium.com/sprites/xy/porygon.gif",
+        "count": 1
+      },
+      "Kabuto": {
+        "name": "Kabuto",
+        "gif": "http://www.pokestadium.com/sprites/xy/kabuto.gif",
+        "count": 1
+      },
+      "Chansey": {
+        "name": "Chansey",
+        "gif": "http://www.pokestadium.com/sprites/xy/chansey.gif",
         "count": 1
       }
     }
@@ -10354,6 +11659,21 @@
         "name": "Kabutops",
         "gif": "http://www.pokestadium.com/sprites/xy/kabutops.gif",
         "count": 1
+      },
+      "Articuno": {
+        "name": "Articuno",
+        "gif": "http://www.pokestadium.com/sprites/xy/articuno.gif",
+        "count": 1
+      },
+      "Charmeleon": {
+        "name": "Charmeleon",
+        "gif": "http://www.pokestadium.com/sprites/xy/charmeleon.gif",
+        "count": 1
+      },
+      "Caterpie": {
+        "name": "Caterpie",
+        "gif": "http://www.pokestadium.com/sprites/xy/caterpie.gif",
+        "count": 1
       }
     }
   },
@@ -10362,6 +11682,16 @@
       "Flareon": {
         "name": "Flareon",
         "gif": "http://www.pokestadium.com/sprites/xy/flareon.gif",
+        "count": 1
+      },
+      "Eevee": {
+        "name": "Eevee",
+        "gif": "http://www.pokestadium.com/sprites/xy/eevee.gif",
+        "count": 1
+      },
+      "Doduo": {
+        "name": "Doduo",
+        "gif": "http://www.pokestadium.com/sprites/xy/doduo.gif",
         "count": 1
       }
     }
@@ -10376,6 +11706,11 @@
       "Marowak": {
         "name": "Marowak",
         "gif": "http://www.pokestadium.com/sprites/xy/marowak.gif",
+        "count": 1
+      },
+      "Omastar": {
+        "name": "Omastar",
+        "gif": "http://www.pokestadium.com/sprites/xy/omastar.gif",
         "count": 1
       }
     }
@@ -10427,6 +11762,16 @@
         "name": "Weezing",
         "gif": "http://www.pokestadium.com/sprites/xy/weezing.gif",
         "count": 1
+      },
+      "Nidorina": {
+        "name": "Nidorina",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidorina.gif",
+        "count": 1
+      },
+      "Machop": {
+        "name": "Machop",
+        "gif": "http://www.pokestadium.com/sprites/xy/machop.gif",
+        "count": 1
       }
     }
   },
@@ -10477,6 +11822,21 @@
         "name": "Gyarados",
         "gif": "http://www.pokestadium.com/sprites/xy/gyarados.gif",
         "count": 1
+      },
+      "Omanyte": {
+        "name": "Omanyte",
+        "gif": "http://www.pokestadium.com/sprites/xy/omanyte.gif",
+        "count": 1
+      },
+      "Articuno": {
+        "name": "Articuno",
+        "gif": "http://www.pokestadium.com/sprites/xy/articuno.gif",
+        "count": 1
+      },
+      "Starmie": {
+        "name": "Starmie",
+        "gif": "http://www.pokestadium.com/sprites/xy/starmie.gif",
+        "count": 1
       }
     }
   },
@@ -10485,6 +11845,16 @@
       "Venonat": {
         "name": "Venonat",
         "gif": "http://www.pokestadium.com/sprites/xy/venonat.gif",
+        "count": 1
+      },
+      "Electabuzz": {
+        "name": "Electabuzz",
+        "gif": "http://www.pokestadium.com/sprites/xy/electabuzz.gif",
+        "count": 1
+      },
+      "Magmar": {
+        "name": "Magmar",
+        "gif": "http://www.pokestadium.com/sprites/xy/magmar.gif",
         "count": 1
       }
     }
@@ -10503,6 +11873,11 @@
       "Venusaur": {
         "name": "Venusaur",
         "gif": "http://www.pokestadium.com/sprites/xy/venusaur.gif",
+        "count": 1
+      },
+      "Ekans": {
+        "name": "Ekans",
+        "gif": "http://www.pokestadium.com/sprites/xy/ekans.gif",
         "count": 1
       }
     }
@@ -10531,6 +11906,11 @@
         "name": "Dugtrio",
         "gif": "http://www.pokestadium.com/sprites/xy/dugtrio.gif",
         "count": 1
+      },
+      "Golem": {
+        "name": "Golem",
+        "gif": "http://www.pokestadium.com/sprites/xy/golem.gif",
+        "count": 1
       }
     }
   },
@@ -10548,6 +11928,11 @@
       "Horsea": {
         "name": "Horsea",
         "gif": "http://www.pokestadium.com/sprites/xy/horsea.gif",
+        "count": 1
+      },
+      "Machop": {
+        "name": "Machop",
+        "gif": "http://www.pokestadium.com/sprites/xy/machop.gif",
         "count": 1
       }
     }
@@ -10581,6 +11966,21 @@
         "name": "Persian",
         "gif": "http://www.pokestadium.com/sprites/xy/persian.gif",
         "count": 1
+      },
+      "Moltres": {
+        "name": "Moltres",
+        "gif": "http://www.pokestadium.com/sprites/xy/moltres.gif",
+        "count": 1
+      },
+      "Nidoran": {
+        "name": "Nidoran",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidoran.gif",
+        "count": 1
+      },
+      "Farfetch'd": {
+        "name": "Farfetch'd",
+        "gif": "http://www.pokestadium.com/sprites/xy/farfetch'd.gif",
+        "count": 1
       }
     }
   },
@@ -10590,6 +11990,11 @@
         "name": "Kingler",
         "gif": "http://www.pokestadium.com/sprites/xy/kingler.gif",
         "count": 1
+      },
+      "Pidgeot": {
+        "name": "Pidgeot",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgeot.gif",
+        "count": 1
       }
     }
   },
@@ -10598,6 +12003,11 @@
       "Porygon": {
         "name": "Porygon",
         "gif": "http://www.pokestadium.com/sprites/xy/porygon.gif",
+        "count": 1
+      },
+      "Exeggcute": {
+        "name": "Exeggcute",
+        "gif": "http://www.pokestadium.com/sprites/xy/exeggcute.gif",
         "count": 1
       }
     }
@@ -10626,6 +12036,11 @@
         "name": "Geodude",
         "gif": "http://www.pokestadium.com/sprites/xy/geodude.gif",
         "count": 1
+      },
+      "Venonat": {
+        "name": "Venonat",
+        "gif": "http://www.pokestadium.com/sprites/xy/venonat.gif",
+        "count": 1
       }
     }
   },
@@ -10635,6 +12050,16 @@
         "name": "Tauros",
         "gif": "http://www.pokestadium.com/sprites/xy/tauros.gif",
         "count": 1
+      },
+      "Dugtrio": {
+        "name": "Dugtrio",
+        "gif": "http://www.pokestadium.com/sprites/xy/dugtrio.gif",
+        "count": 1
+      },
+      "Chansey": {
+        "name": "Chansey",
+        "gif": "http://www.pokestadium.com/sprites/xy/chansey.gif",
+        "count": 1
       }
     }
   },
@@ -10643,6 +12068,21 @@
       "Parasect": {
         "name": "Parasect",
         "gif": "http://www.pokestadium.com/sprites/xy/parasect.gif",
+        "count": 1
+      },
+      "Dodrio": {
+        "name": "Dodrio",
+        "gif": "http://www.pokestadium.com/sprites/xy/dodrio.gif",
+        "count": 1
+      },
+      "Charmander": {
+        "name": "Charmander",
+        "gif": "http://www.pokestadium.com/sprites/xy/charmander.gif",
+        "count": 1
+      },
+      "Nidoran?": {
+        "name": "Nidoran?",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidoran?.gif",
         "count": 1
       }
     }
@@ -10667,6 +12107,11 @@
         "name": "Muk",
         "gif": "http://www.pokestadium.com/sprites/xy/muk.gif",
         "count": 1
+      },
+      "Articuno": {
+        "name": "Articuno",
+        "gif": "http://www.pokestadium.com/sprites/xy/articuno.gif",
+        "count": 1
       }
     }
   },
@@ -10675,6 +12120,404 @@
       "Haunter": {
         "name": "Haunter",
         "gif": "http://www.pokestadium.com/sprites/xy/haunter.gif",
+        "count": 1
+      },
+      "Slowpoke": {
+        "name": "Slowpoke",
+        "gif": "http://www.pokestadium.com/sprites/xy/slowpoke.gif",
+        "count": 1
+      }
+    }
+  },
+  "209781800099119105": {
+    "pokemon": {
+      "Graveler": {
+        "name": "Graveler",
+        "gif": "http://www.pokestadium.com/sprites/xy/graveler.gif",
+        "count": 1
+      },
+      "Zubat": {
+        "name": "Zubat",
+        "gif": "http://www.pokestadium.com/sprites/xy/zubat.gif",
+        "count": 1
+      },
+      "Shellder": {
+        "name": "Shellder",
+        "gif": "http://www.pokestadium.com/sprites/xy/shellder.gif",
+        "count": 1
+      },
+      "Clefairy": {
+        "name": "Clefairy",
+        "gif": "http://www.pokestadium.com/sprites/xy/clefairy.gif",
+        "count": 1
+      }
+    }
+  },
+  "322649304273518592": {
+    "pokemon": {
+      "Staryu": {
+        "name": "Staryu",
+        "gif": "http://www.pokestadium.com/sprites/xy/staryu.gif",
+        "count": 1
+      },
+      "Poliwag": {
+        "name": "Poliwag",
+        "gif": "http://www.pokestadium.com/sprites/xy/poliwag.gif",
+        "count": 1
+      }
+    }
+  },
+  "324977010583666698": {
+    "pokemon": {
+      "Seel": {
+        "name": "Seel",
+        "gif": "http://www.pokestadium.com/sprites/xy/seel.gif",
+        "count": 1
+      },
+      "Hitmonchan": {
+        "name": "Hitmonchan",
+        "gif": "http://www.pokestadium.com/sprites/xy/hitmonchan.gif",
+        "count": 1
+      },
+      "Zubat": {
+        "name": "Zubat",
+        "gif": "http://www.pokestadium.com/sprites/xy/zubat.gif",
+        "count": 1
+      }
+    }
+  },
+  "310158570933059586": {
+    "pokemon": {
+      "Kadabra": {
+        "name": "Kadabra",
+        "gif": "http://www.pokestadium.com/sprites/xy/kadabra.gif",
+        "count": 1
+      }
+    }
+  },
+  "253714932174946306": {
+    "pokemon": {
+      "Machoke": {
+        "name": "Machoke",
+        "gif": "http://www.pokestadium.com/sprites/xy/machoke.gif",
+        "count": 1
+      }
+    }
+  },
+  "177580902262636544": {
+    "pokemon": {
+      "Krabby": {
+        "name": "Krabby",
+        "gif": "http://www.pokestadium.com/sprites/xy/krabby.gif",
+        "count": 1
+      }
+    }
+  },
+  "168093304594890752": {
+    "pokemon": {
+      "Pikachu": {
+        "name": "Pikachu",
+        "gif": "http://www.pokestadium.com/sprites/xy/pikachu.gif",
+        "count": 1
+      },
+      "Omanyte": {
+        "name": "Omanyte",
+        "gif": "http://www.pokestadium.com/sprites/xy/omanyte.gif",
+        "count": 1
+      }
+    }
+  },
+  "278947750647955464": {
+    "pokemon": {
+      "Drowzee": {
+        "name": "Drowzee",
+        "gif": "http://www.pokestadium.com/sprites/xy/drowzee.gif",
+        "count": 1
+      }
+    }
+  },
+  "259263428370104320": {
+    "pokemon": {
+      "Magneton": {
+        "name": "Magneton",
+        "gif": "http://www.pokestadium.com/sprites/xy/magneton.gif",
+        "count": 1
+      },
+      "Pidgeot": {
+        "name": "Pidgeot",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgeot.gif",
+        "count": 1
+      },
+      "Chansey": {
+        "name": "Chansey",
+        "gif": "http://www.pokestadium.com/sprites/xy/chansey.gif",
+        "count": 1
+      }
+    }
+  },
+  "141233420545163264": {
+    "pokemon": {
+      "Weepinbell": {
+        "name": "Weepinbell",
+        "gif": "http://www.pokestadium.com/sprites/xy/weepinbell.gif",
+        "count": 1
+      }
+    }
+  },
+  "324597010105761792": {
+    "pokemon": {
+      "Oddish": {
+        "name": "Oddish",
+        "gif": "http://www.pokestadium.com/sprites/xy/oddish.gif",
+        "count": 2
+      },
+      "Haunter": {
+        "name": "Haunter",
+        "gif": "http://www.pokestadium.com/sprites/xy/haunter.gif",
+        "count": 1
+      },
+      "Voltorb": {
+        "name": "Voltorb",
+        "gif": "http://www.pokestadium.com/sprites/xy/voltorb.gif",
+        "count": 1
+      }
+    }
+  },
+  "277108728111562752": {
+    "pokemon": {
+      "Vileplume": {
+        "name": "Vileplume",
+        "gif": "http://www.pokestadium.com/sprites/xy/vileplume.gif",
+        "count": 1
+      }
+    }
+  },
+  "273229414983139338": {
+    "pokemon": {
+      "Jynx": {
+        "name": "Jynx",
+        "gif": "http://www.pokestadium.com/sprites/xy/jynx.gif",
+        "count": 1
+      },
+      "Lapras": {
+        "name": "Lapras",
+        "gif": "http://www.pokestadium.com/sprites/xy/lapras.gif",
+        "count": 1
+      }
+    }
+  },
+  "177013899177099264": {
+    "pokemon": {
+      "Metapod": {
+        "name": "Metapod",
+        "gif": "http://www.pokestadium.com/sprites/xy/metapod.gif",
+        "count": 1
+      }
+    }
+  },
+  "240893283805429761": {
+    "pokemon": {
+      "Ivysaur": {
+        "name": "Ivysaur",
+        "gif": "http://www.pokestadium.com/sprites/xy/ivysaur.gif",
+        "count": 1
+      },
+      "Golem": {
+        "name": "Golem",
+        "gif": "http://www.pokestadium.com/sprites/xy/golem.gif",
+        "count": 1
+      }
+    }
+  },
+  "192766252941312003": {
+    "pokemon": {
+      "Kadabra": {
+        "name": "Kadabra",
+        "gif": "http://www.pokestadium.com/sprites/xy/kadabra.gif",
+        "count": 1
+      }
+    }
+  },
+  "291756914407374848": {
+    "pokemon": {
+      "Gengar": {
+        "name": "Gengar",
+        "gif": "http://www.pokestadium.com/sprites/xy/gengar.gif",
+        "count": 1
+      }
+    }
+  },
+  "174584589874888704": {
+    "pokemon": {
+      "Pidgeot": {
+        "name": "Pidgeot",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgeot.gif",
+        "count": 1
+      }
+    }
+  },
+  "285213370020528128": {
+    "pokemon": {
+      "Pikachu": {
+        "name": "Pikachu",
+        "gif": "http://www.pokestadium.com/sprites/xy/pikachu.gif",
+        "count": 1
+      },
+      "Ekans": {
+        "name": "Ekans",
+        "gif": "http://www.pokestadium.com/sprites/xy/ekans.gif",
+        "count": 1
+      },
+      "Ivysaur": {
+        "name": "Ivysaur",
+        "gif": "http://www.pokestadium.com/sprites/xy/ivysaur.gif",
+        "count": 1
+      },
+      "Nidorina": {
+        "name": "Nidorina",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidorina.gif",
+        "count": 1
+      }
+    }
+  },
+  "295976957424697346": {
+    "pokemon": {
+      "Seel": {
+        "name": "Seel",
+        "gif": "http://www.pokestadium.com/sprites/xy/seel.gif",
+        "count": 1
+      },
+      "Golem": {
+        "name": "Golem",
+        "gif": "http://www.pokestadium.com/sprites/xy/golem.gif",
+        "count": 1
+      }
+    }
+  },
+  "249579869636263937": {
+    "pokemon": {
+      "Omastar": {
+        "name": "Omastar",
+        "gif": "http://www.pokestadium.com/sprites/xy/omastar.gif",
+        "count": 1
+      },
+      "Marowak": {
+        "name": "Marowak",
+        "gif": "http://www.pokestadium.com/sprites/xy/marowak.gif",
+        "count": 1
+      },
+      "Nidoran": {
+        "name": "Nidoran",
+        "gif": "http://www.pokestadium.com/sprites/xy/nidoran.gif",
+        "count": 2
+      },
+      "Dugtrio": {
+        "name": "Dugtrio",
+        "gif": "http://www.pokestadium.com/sprites/xy/dugtrio.gif",
+        "count": 1
+      },
+      "Ditto": {
+        "name": "Ditto",
+        "gif": "http://www.pokestadium.com/sprites/xy/ditto.gif",
+        "count": 1
+      }
+    }
+  },
+  "177889913855803393": {
+    "pokemon": {
+      "Kadabra": {
+        "name": "Kadabra",
+        "gif": "http://www.pokestadium.com/sprites/xy/kadabra.gif",
+        "count": 1
+      }
+    }
+  },
+  "173231128851906560": {
+    "pokemon": {
+      "Beedrill": {
+        "name": "Beedrill",
+        "gif": "http://www.pokestadium.com/sprites/xy/beedrill.gif",
+        "count": 1
+      }
+    }
+  },
+  "144490755103260673": {
+    "pokemon": {
+      "Caterpie": {
+        "name": "Caterpie",
+        "gif": "http://www.pokestadium.com/sprites/xy/caterpie.gif",
+        "count": 1
+      }
+    }
+  },
+  "289930958759526402": {
+    "pokemon": {
+      "Victreebel": {
+        "name": "Victreebel",
+        "gif": "http://www.pokestadium.com/sprites/xy/victreebel.gif",
+        "count": 1
+      }
+    }
+  },
+  "258455923020922890": {
+    "pokemon": {
+      "Psyduck": {
+        "name": "Psyduck",
+        "gif": "http://www.pokestadium.com/sprites/xy/psyduck.gif",
+        "count": 1
+      }
+    }
+  },
+  "233028725594128384": {
+    "pokemon": {
+      "Pidgey": {
+        "name": "Pidgey",
+        "gif": "http://www.pokestadium.com/sprites/xy/pidgey.gif",
+        "count": 1
+      }
+    }
+  },
+  "253283726358740992": {
+    "pokemon": {
+      "Raichu": {
+        "name": "Raichu",
+        "gif": "http://www.pokestadium.com/sprites/xy/raichu.gif",
+        "count": 1
+      }
+    }
+  },
+  "197811841487863808": {
+    "pokemon": {
+      "Raichu": {
+        "name": "Raichu",
+        "gif": "http://www.pokestadium.com/sprites/xy/raichu.gif",
+        "count": 1
+      }
+    }
+  },
+  "202232715829837825": {
+    "pokemon": {
+      "Mr. Mime": {
+        "name": "Mr. Mime",
+        "gif": "http://www.pokestadium.com/sprites/xy/mr. mime.gif",
+        "count": 1
+      }
+    }
+  },
+  "272104527421767692": {
+    "pokemon": {
+      "Zapdos": {
+        "name": "Zapdos",
+        "gif": "http://www.pokestadium.com/sprites/xy/zapdos.gif",
+        "count": 1
+      }
+    }
+  },
+  "324685103919792130": {
+    "pokemon": {
+      "Articuno": {
+        "name": "Articuno",
+        "gif": "http://www.pokestadium.com/sprites/xy/articuno.gif",
         "count": 1
       }
     }

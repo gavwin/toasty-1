@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 const path = require('path');
-const arguments = require(path.join(__dirname, '..', '..', 'data/arguments.json'));
+const fs = require('fs');
 
 module.exports = class ArgumentCommand extends Command {
   constructor(client) {
@@ -18,6 +18,7 @@ module.exports = class ArgumentCommand extends Command {
   }
 
   run(msg, args) {
-    msg.say(arguments[Math.floor(Math.random() * arguments.length)]);
+    const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data/arguments.json')));
+    msg.say(data[Math.floor(Math.random() * data.length)]);
   }
 };
