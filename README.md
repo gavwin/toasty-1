@@ -1,7 +1,7 @@
 # toasty
 The fun, moderating, music playing and delicious multi-purpose Discord bot!
 
-[Website](http://toastythebot.tk)
+[Website](http://toastythebot.tk) |
 [Discord](https://discord.me/toasty)
 
 ### Hosting
