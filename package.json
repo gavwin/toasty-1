@@ -1,6 +1,6 @@
 {
   "name": "toasty",
-  "version": "3.3.0",
+  "version": "4.1.9",
   "description": "Toasty - a moderating, fun, music playing and delicious bot",
   "main": "toasty.js",
   "scripts": {
