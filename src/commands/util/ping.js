@@ -17,10 +17,10 @@ module.exports = class PingCommand extends Command {
   async run(msg) {
 		if(!msg.editable) {
 			const pingMsg = await msg.say('*Pinging...*');
-      return pingMsg.edit(`:ping_pong: **Pong!**\nMessage latency: **${pingMsg.createdTimestamp - msg.createdTimestamp}ms**\nDiscord Latency: **${Math.round(this.client.ping)}ms**`);
+      return pingMsg.edit(`:ping_pong: **Pong!**\nMessage latency: **${pingMsg.createdTimestamp - msg.createdTimestamp}ms**\nDiscord latency: **${Math.round(this.client.ping)}ms**`);
 		} else {
 			await msg.edit('*Pinging...*');
-      return pingMsg.edit(`:ping_pong: **Pong!**\nMessage latency: **${pingMsg.createdTimestamp - msg.createdTimestamp}ms**\nDiscord Latency: **${Math.round(this.client.ping)}ms**`);
+      return pingMsg.edit(`:ping_pong: **Pong!**\nMessage latency: **${pingMsg.createdTimestamp - msg.createdTimestamp}ms**\nDiscord latency: **${Math.round(this.client.ping)}ms**`);
 		}
 	}
 };

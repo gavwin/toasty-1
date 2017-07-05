@@ -48,14 +48,20 @@ exports.run = (client, member) => {
            .setTitle('Bot Joined:')
            .setDescription(`+ ${member.user.username}#${member.user.discriminator} (${member.user.id})`)
            .setFooter(`${date} at ${time}`);
-      guild.channels.find('name', 'join-log').send({ embed }).catch((e) => console.log('Caught.'));
+      if (!guild.member(client.user).hasPermission('EMBED_LINKS')) return guild.defaultChannel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have the **Send Embeds** permission!');
+      guild.channels.find('name', 'join-log').send({ embed }).catch(err => {
+				return msg.channel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have access to a channel called mod-log!');
+			});
     } else {
       embed.setColor(0x32CD32)
            .setAuthor(member.user.username, member.user.avatarURL)
            .setTitle('User Joined:')
            .setDescription(`+ ${member.user.username}#${member.user.discriminator} (${member.user.id})`)
-           .setFooter(date + ` at ` + time)
-      guild.channels.find('name', 'join-log').send({ embed }).catch((e) => console.log('Caught.'));
+           .setFooter(`${date} at ${time}`);
+      if (!guild.member(client.user).hasPermission('EMBED_LINKS')) return guild.defaultChannel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have the **Send Embeds** permission!');
+      guild.channels.find('name', 'join-log').send({ embed }).catch(err => {
+				guild.defaultChannel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have access to a channel called mod-log!');
+			});
     }
   }
 }
