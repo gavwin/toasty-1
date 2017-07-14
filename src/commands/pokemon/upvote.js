@@ -17,13 +17,11 @@ module.exports = class UpvoteCommand extends Command {
 
   run(msg) {
     const steps =
-      `**__How to upvote me:__**
-      1. **Go to http://toastythebot.tk/upvote** (You will be redirected).
-      2. **__Login__ to your Discord account on the top right corner of the website.**
-      3. **Click the "Upvote" button that looks like the image below.**
-      4. **You should now be able to use the Pokemon commands!**
+      `**How to upvote me:**
+      1. **Go to http://toastythebot.tk/upvote** (You will be redirected)
+      2. **Click the "Upvote" button that looks like this: http://i.imgur.com/pPnpmgm.png**
+      3. **Type, \`${this.client.commandPrefix}verifyupvote\` and you will be able to use the Pokemon commands!**
       If the Pokemon commands still do not work for you, type, \`${this.client.commandPrefix}hq\` and ask for support.
-      http://i.imgur.com/ussvWiV.png
       `;
 
       msg.say(steps);

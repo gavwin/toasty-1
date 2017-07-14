@@ -27,7 +27,6 @@ exports.run = (client, member) => {
     if (!role) return guild.defaultChannel.send(`:no_entry_sign: **Error:** Couldn't add join role. Reason: \`${joinRole}\` isn't a role on this server!`);
     if (!guild.member(client.user).hasPermission('MANAGE_ROLES')) return guild.defaultChannel.send(':no_entry_sign: **Error:** I couldn\'t add the join role because I don\'t have the **Manage Roles** permission!');
     if (data[guild.id].joinlog) {
-      if (!guild.channels.find('name', 'join-log')) return guild.defaultChannel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have access to a channel called join-log!');
       if (member.user.bot) return guild.channels.find('name', 'join-log').send(`Didn't add the join role to **${member.user.username}** because it is a bot.`);
         member.addRole(role.id);
         guild.channels.find('name', 'join-log').send(`Added the join role of \`${joinRole}\` to **${member.user.username}**.`);
@@ -50,9 +49,8 @@ exports.run = (client, member) => {
            .setDescription(`+ ${member.user.username}#${member.user.discriminator} (${member.user.id})`)
            .setFooter(`${date} at ${time}`);
       if (!guild.member(client.user).hasPermission('EMBED_LINKS')) return guild.defaultChannel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have the **Send Embeds** permission!');
-      if (!guild.channels.find('name', 'join-log')) return guild.defaultChannel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have access to a channel called join-log!');
       guild.channels.find('name', 'join-log').send({ embed }).catch(err => {
-				return msg.channel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have access to a channel called join-log!');
+				return msg.channel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have access to a channel called mod-log!');
 			});
     } else {
       embed.setColor(0x32CD32)
@@ -61,9 +59,8 @@ exports.run = (client, member) => {
            .setDescription(`+ ${member.user.username}#${member.user.discriminator} (${member.user.id})`)
            .setFooter(`${date} at ${time}`);
       if (!guild.member(client.user).hasPermission('EMBED_LINKS')) return guild.defaultChannel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have the **Send Embeds** permission!');
-      if (!guild.channels.find('name', 'join-log')) return guild.defaultChannel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have access to a channel called join-log!');
       guild.channels.find('name', 'join-log').send({ embed }).catch(err => {
-				guild.defaultChannel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have access to a channel called join-log!');
+				guild.defaultChannel.send(':no_entry_sign: **Error:** I couldn\'t send an embed in the #join-log. Please make sure I have access to a channel called mod-log!');
 			});
     }
   }

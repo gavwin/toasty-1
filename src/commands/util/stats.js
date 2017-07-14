@@ -12,8 +12,8 @@ module.exports = class StatsCommand extends Command {
       memberName: 'stats',
       description: 'Sends detailed statistics of the bot.',
       throttling: {
-        usages: 1,
-        duration: 15
+        usages: 2,
+        duration: 3
       }
     });
   }
@@ -30,8 +30,8 @@ module.exports = class StatsCommand extends Command {
     const voiceConnectionRes = await this.client.shard.fetchClientValues('voiceConnections.size');
     const voiceConnections = voiceConnectionRes.reduce((prev, val) => prev + val, 0);
     const uptime = await this.client.shard.fetchClientValues('uptime');
-    let averageUptime = uptime[0] + uptime[1] + uptime[3];
-    averageUptime = averageUptime / 3;
+    let averageUptime = uptime[0] + uptime[1];
+    averageUptime = averageUptime / 2;
 
     const embed = new RichEmbed();
     const toExec = `top -bn2 | grep \"Cpu(s)\" | \\

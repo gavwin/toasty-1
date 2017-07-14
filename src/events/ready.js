@@ -29,5 +29,5 @@ exports.run = async (client) => {
     statsData.voiceConnections = total[3];
     let updateValue = JSON.stringify(statsData, null, 2);
     fs.writeFileSync(jsonPath, updateValue);
-  }, 180000); //3 mins
+  }, 180000);
 }
