@@ -1,7 +1,6 @@
 src/config.json
-src/data/servers.json
-src/data/pokemon.json
-src/data/users.json
+src/data
 src/node_modules
 web/stats.json
 web/node_modules
+web/config.json
