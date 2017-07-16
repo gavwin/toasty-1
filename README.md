@@ -13,4 +13,6 @@ Code your *toasty* heart away and make a pull request! Once you've contributed a
 ### Toasty uses...
 - [Node.js](https://nodejs.org)
 - [discord.js](https://github.com/hydrabolt/discord.js)
-- [Commando](https://github.com/Gawdl3y/discord.js-commando)
+- [discord.js-commando](https://github.com/Gawdl3y/discord.js-commando)
+- [FFmpeg](https://ffmpeg.org)
+- [node-opus](https://github.com/Rantanen/node-opus)
