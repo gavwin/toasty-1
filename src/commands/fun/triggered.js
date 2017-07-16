@@ -17,7 +17,11 @@ module.exports = class TriggeredCommand extends Command {
           prompt: 'Which user would you like to make triggered?\n',
           type: 'user'
         }
-      ]
+      ],
+      throttling: {
+        usages: 1,
+        duration: 30
+      }
     });
   }
 

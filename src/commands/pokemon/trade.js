@@ -77,8 +77,17 @@ module.exports = class TradeCommand extends Command {
         }
       }
 
-      delete data[msg.author.id].pokemon[pokemon1];
-      delete data[user.id].pokemon[pokemon2];
+      if (data[msg.author.id].pokemon[pokemon1].count > 1) {
+        data[msg.author.id].pokemon[pokemon1].count--;
+      } else {
+        delete data[msg.author.id].pokemon[pokemon1];
+      }
+
+      if (data[user.id].pokemon[pokemon2].count > 1) {
+        data[user.id].pokemon[pokemon2].count--;
+      } else {
+        delete data[user.id].pokemon[pokemon2];
+      }
 
       fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
 

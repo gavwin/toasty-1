@@ -1,9 +1,10 @@
-const { indicoToken, youTubeToken, prefix, me } = require('../config.json');
+const { indicoToken, youTubeToken, prefix, me, discordbotsToken } = require('../config.json');
 const indico = require('indico.io');
+const snekfetch = require('snekfetch');
 const path = require('path');
 const fs = require('fs');
 const url = require('url');
-const statsPath = path.join(__dirname, '..', 'data/stats.json');
+const statsPath = path.join(__dirname, '..', 'data', 'stats.json');
 const yt = require('ytdl-core');
 const YouTube = require('youtube-node');
 const youTube = new YouTube();
@@ -14,7 +15,6 @@ const playlists = ['pop', 'hiphop', 'electro', 'classical', 'rock-n-roll', 'chil
 
 exports.run = (client, msg) => {
   if (msg.channel.type === 'dm') return;
-  if (!msg.guild.member(client.user).hasPermission('SEND_MESSAGES')) return;
 
   if (msg.content.startsWith(prefix+'cleartoday') && msg.author.id === me) {
     const stats = JSON.parse(fs.readFileSync(statsPath, 'utf8'));
@@ -60,6 +60,20 @@ exports.run = (client, msg) => {
 
   if (!msg.content.startsWith(prefix)) return;
   if (msg.content.startsWith(prefix+'play') && !msg.guild.member(client.user).hasPermission('CONNECT') || !msg.guild.member(client.user).hasPermission('SPEAK')) return msg.reply(':no_entry_sign: I don\'t have the **Connect** or **Speak** permission!');
+
+  /*const mCmds = ['play', 'add', 'join', 'leave', 'stop', 'pause', 'resume', 'skip', 'volume', 'time', 'queue', 'clearqueue', 'playlist', 'playlists'];
+  if (mCmds.some(m => msg.content.includes(m))) {
+    if (client.voiceConnections.size > 5) {
+      snekfetch.get(`https://discordbots.org/api/bots/${client.user.id}/votes?onlyids=1`)
+        .set('Authorization', discordbotsToken)
+        .then(r => {
+          if (r.body.includes(msg.author.id) && musicCommands.hasOwnProperty(msg.content.toLowerCase().slice(1).split(' ')[0])) musicCommands[msg.content.toLowerCase().slice(1).split(' ')[0]](msg);
+          else msg.reply(':no_entry_sign: I\'m currently playing in too many voice channels. If you would like to override this please upvote me at http://toastythebot.tk.');
+        });
+    } else {
+      if (musicCommands.hasOwnProperty(msg.content.toLowerCase().slice(1).split(' ')[0])) musicCommands[msg.content.toLowerCase().slice(1).split(' ')[0]](msg);
+    }
+  }*/
   if (musicCommands.hasOwnProperty(msg.content.toLowerCase().slice(1).split(' ')[0])) musicCommands[msg.content.toLowerCase().slice(1).split(' ')[0]](msg);
 }
 
@@ -75,6 +89,12 @@ const musicCommands = {
     queue[msg.guild.id].playing = true;
 
     (function play(song) {
+      if (!queue[msg.guild.id]) queue[msg.guild.id] = { songs: [] };
+      if (queue[msg.guild.id].songs === undefined) return msg.channel.send(':no_entry_sign: The server queue is now empty. Leaving voice channel...').then(() => {
+        if (!queue[msg.guild.id]) queue[msg.guild.id] = {playing: false};
+        queue[msg.guild.id].playing = false;
+        msg.member.voiceChannel.leave();
+      });
       if (song === undefined) return msg.channel.send(':no_entry_sign: The server queue is now empty. Leaving voice channel...').then(() => {
         if (!queue[msg.guild.id]) queue[msg.guild.id] = {playing: false};
         queue[msg.guild.id].playing = false;
@@ -84,14 +104,6 @@ const musicCommands = {
         try {
           setTimeout(() => {
             m.edit(`:notes: Now playing **${song.title}** as requested by **${song.requester}**`);
-            if (!queue[msg.guild.id]) queue[msg.guild.id] = {
-              nowPlaying: {
-                title: song.title,
-                requester: song.requester,
-                url: song.url
-              }
-            };
-            queue[msg.guild.id].nowPlaying = {title: song.title, requester: song.requester, url: song.url};
           }, 1000);
         } catch(e) {
           m.edit(`:notes: Now playing **${song.title}** as requested by **${song.requester}**`);
@@ -131,6 +143,7 @@ const musicCommands = {
           if (vol >= 75 && vol <= 124) msg.channel.send(`:sound: Set the volume to **${vol}**.`);
           if (vol <= 74) msg.channel.send(`:speaker: Set the volume to **${vol}**.`);
 		      dispatcher.setVolume((vol/100));
+          if (!queue[msg.guild.id]) queue[msg.guild.id] = {volume: vol/100};
           queue[msg.guild.id].volume = vol/100;
         } else if (m.content.startsWith(prefix+'time')) {
           msg.channel.send(`:clock1: Time: ${Math.floor(dispatcher.time / 60000)}:${Math.floor((dispatcher.time % 60000)/1000) <10 ? '0'+Math.floor((dispatcher.time % 60000)/1000) : Math.floor((dispatcher.time % 60000)/1000)}`);
@@ -141,17 +154,7 @@ const musicCommands = {
           queue[msg.guild.id].playing = false;
           if (queue[msg.guild.id].paused) queue[msg.guild.id].paused = false;
           dispatcher.end();
-          voiceChannel.leave();
-        } else if (m.content.startsWith(prefix+'np') || m.content.startsWith(prefix+'nowplaying')) {
-          if (!queue[msg.guild.id]) queue[msg.guild.id] = {
-            nowPlaying: {
-              song: '*failed to load*',
-              requester: '*failed to load*',
-              url: '*failed to load*'
-            }
-          };
-          let song = queue[msg.guild.id].nowPlaying;
-          msg.channel.send(`:notes: The song that is currently playing is **${song.title}** as requested by **${song.requester}**.\n${song.url}`);
+          msg.channel.send('I\'ve stopped playing, left your voice channel and cleared the queue.');
         }
       });
       dispatcher.once('end', () => {
@@ -160,6 +163,10 @@ const musicCommands = {
         if (queue[msg.guild.id].songs.length === 0) {
           delete queue[msg.guild.id];
           delete dispatcher;
+          msg.channel.send('There are no more songs in the queue. Leaving voice channel...');
+          const voiceChannel = msg.member.voiceChannel;
+          if (!voiceChannel || voiceChannel.type !== 'voice') return msg.channel.send('I could not leave the voice channel. Try using, `;leave`.');
+          voiceChannel.leave();
         } else {
           setTimeout(() => {
             delete dispatcher;
@@ -191,13 +198,10 @@ const musicCommands = {
     });
   },
   'leave': (msg) => {
-      const voiceChannel = msg.member.voiceChannel;
-      if (!voiceChannel || voiceChannel.type !== 'voice') return msg.reply(':no_entry_sign: I couldn\'t disconnect from your voice channel.');
-      try {
-        voiceChannel.leave();
-      } catch(err) {
-        msg.reply(':no_entry_sign: **Error:** I couldn\'t disconnect from your voice channel.\n' + err);
-      }
+    const voiceChannel = msg.member.voiceChannel;
+    if (!voiceChannel || voiceChannel.type !== 'voice') return msg.reply(':no_entry_sign: I couldn\'t disconnect from your voice channel.');
+    voiceChannel.leave();
+    msg.channel.send('I\'ve left your voice channel.');
   },
   'add': (msg) => {
     async function addFromUrl(url) {
@@ -214,7 +218,17 @@ const musicCommands = {
           });
           m.edit(`:white_check_mark: Added **${info.title}** to the queue.`);
         } catch (err) {
-          m.edit(`:no_entry_sign: Failed to add **${info.title}** to the queue.\n${err}`);
+          queue[msg.guild.id] = {
+            songs: [
+              {
+                url: url,
+                title: info.title,
+                requester: msg.author.username
+              }
+            ]
+          };
+          m.edit(`:white_check_mark: Added **${info.title}** to the queue.`);
+          //m.edit(`:no_entry_sign: Failed to add **${info.title}** to the queue.\n${err}`);
         }
       });
     }
@@ -235,25 +249,17 @@ const musicCommands = {
       if (url == '' || url === undefined) return m.edit(`:no_entry_sign: You must add a YouTube video url after \`${prefix}add\``);
       const m = await msg.channel.send('*Adding...*');
       const songs = await dyouTube.getPlaylist(url);
-      let ltq = 15;
-      if (songs.length < 15) ltq = songs.length;
-      const arr = new Array();
-      for (let i = 0, len = songs.length; i < ltq; i++) {
-        let r = Math.floor(Math.random() * (len + 1));
-        while (arr.includes(r)) {
-          r = Math.floor(Math.random() * (len + 1));
-        }
-        arr.push(r);
+      for (let i = 0, len = songs.length; i < len; i++) {
         try {
         if (!queue.hasOwnProperty(msg.guild.id)) queue[msg.guild.id] = {}, queue[msg.guild.id].playing = false, queue[msg.guild.id].songs = [];
         queue[msg.guild.id].songs.push({
-          url: songs[r].url,
-          title: songs[r].title,
+          url: songs[i].url,
+          title: songs[i].title,
           requester: msg.author.username
         });
       } catch(e) {}
       }
-      m.edit(`:white_check_mark: 15 random songs from the playlist have been queued. To queue another 15 run the \`play [playlist URL]\` command again.`);
+      m.edit(`:white_check_mark: The playlist has been queued.`);
     }
 
     if (msg.content === prefix+'add') return;
@@ -271,17 +277,25 @@ const musicCommands = {
   },
   'queue': (msg) => {
     if (queue[msg.guild.id] === undefined) return msg.channel.send(`:no_entry_sign: There are currently no songs in the server queue.\nAdd some with \`${prefix}add [song name / URL]\``);
-    if (!queue[msg.guild.id]) queue[msg.guild.id] = { songs: [] };
     let tosend = new Array();
-    queue[msg.guild.id].songs.forEach((song, i) => {
-      tosend.push(`${i+1}. ${song.title} - Requested by: ${song.requester}`);
-    });
-    msg.channel.send(`__**${msg.guild.name}'s Music Queue:**__ Currently **${tosend.length}** songs queued ${(tosend.length > 15 ? '*[Only next 15 shown]*' : '')}\n\`\`\`${tosend.slice(0,15).join('\n')}\`\`\``);
+    try {
+      queue[msg.guild.id].songs.forEach((song, i) => {
+        tosend.push(`${i+1}. ${song.title} - Requested by: ${song.requester}`);
+      });
+      msg.channel.send(`__**${msg.guild.name}'s Music Queue:**__ Currently **${tosend.length}** songs queued ${(tosend.length > 15 ? '*[Only next 15 shown]*' : '')}\n\`\`\`${tosend.slice(0,15).join('\n')}\`\`\``);
+    } catch(e) {
+      if (!queue[msg.guild.id]) queue[msg.guild.id] = { songs: [] };
+      msg.channel.send(`:no_entry_sign: There was an error getting the queue:\n${e}`);
+    }
   },
   'clearqueue': (msg) => {
-    if (queue[msg.guild.id] === undefined) return msg.channel.send(':no_entry_sign: There are currently no songs in the server queue.');
-    queue[msg.guild.id].songs.splice(0, queue[msg.guild.id].songs.length);
-    msg.reply(':white_check_mark: I\'ve cleared the server queue.');
+    if (queue[msg.guild.id] === undefined || !queue[msg.guild.id]) return msg.channel.send(':no_entry_sign: There are currently no songs in the server queue.');
+    try {
+      queue[msg.guild.id].songs.splice(0, queue[msg.guild.id].songs.length);
+      msg.reply(':white_check_mark: I\'ve cleared the server queue.');
+    } catch(e) {
+      msg.reply(`:no_entry_sign: **Error:**\n${e}`);
+    }
   },
   'playlists': (msg) => {
     msg.channel.send('Avaliable playlists include:\n`'+playlists.join(', ')+'`');

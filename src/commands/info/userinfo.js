@@ -47,7 +47,7 @@ module.exports = class UserInfoCommand extends Command {
 		embed.setTimestamp(new Date());
 		embed.addField('**User Information**', stripIndents`
 		Account Creation: ${moment(user.createdAt).tz('America/Chicago').format('dddd, MMMM Do YYYY, h:mm:ss a zz')}
-		Status: ${this.client.emojis.get(statuses[user.presence.status])}
+		Status: ${user.presence.status}
 		Game: ${user.presence.game ? user.presence.game.name : 'N/A'}
 		`);
 		embed.setColor(0x0d0d0d);
@@ -62,7 +62,7 @@ module.exports = class UserInfoCommand extends Command {
 					return '';
 				}).join(', ').substring(2), true);
 			} else {
-				embed.addField('Roles', 'Too Many', true);
+				embed.addField('Roles', 'Too many to display', true);
 			}
 		}
 		return msg.embed(embed);

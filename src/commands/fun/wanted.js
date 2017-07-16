@@ -17,7 +17,11 @@ module.exports = class WantedCommand extends Command {
           prompt: 'Which user would you like to make wanted?\n',
           type: 'user'
         }
-      ]
+      ],
+      throttling: {
+        usages: 1,
+        duration: 30
+      }
     });
   }
 

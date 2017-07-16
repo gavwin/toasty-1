@@ -18,10 +18,10 @@ exports.run = async (client) => {
   total.push(voiceConnections.reduce((prev, val) => prev + val, 0));
   setInterval(() => {
     if (!statsData) statsData = {
-      "servers": "null",
-      "users": "null",
-      "channels": "null",
-      "voiceConnections": "null"
+      "servers": 0,
+      "users": 0,
+      "channels": 0,
+      "voiceConnections": 0
     };
     statsData.servers = total[0];
     statsData.users = total[1];
@@ -29,5 +29,5 @@ exports.run = async (client) => {
     statsData.voiceConnections = total[3];
     let updateValue = JSON.stringify(statsData, null, 2);
     fs.writeFileSync(jsonPath, updateValue);
-  }, 180000);
+  }, 60000); //1 min
 }
