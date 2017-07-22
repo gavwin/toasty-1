@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const randomPokemon = require('pokemon-random-name');
+const randomPokemon = require('pokemon-random');
 const fs = require('fs');
 const path = require('path');
 const jsonPath = path.join(__dirname, '..', '..', 'data', 'pokemon.json');
@@ -15,8 +15,8 @@ module.exports = class PokemonCommand extends Command {
       name: 'pokemon',
       group: 'pokemon',
       memberName: 'pokemon',
-      description: 'Lets you catch a Pokemon every 5 hours.',
-      details: 'Lets you catch a random Pokemon every 5 hours and stores it in your virtual inventory.\nYou can trade pokemon with other players.',
+      description: 'Lets you catch a Pokemon every 3 hours.',
+      details: 'Lets you catch a random Pokemon every 3 hours and stores it in your virtual inventory.\nYou can trade pokemon with other players.',
       guildOnly: true,
       throttling: {
         usages: 1,
@@ -33,19 +33,16 @@ module.exports = class PokemonCommand extends Command {
       .then(r => {
         if (!r.body.includes(user.id)) return msg.reply(`:no_entry_sign: You can\'t use the Pokemon commands because you haven\'t upvoted me.\nType, \`${this.client.commandPrefix}upvote\` for the steps on how to upvote me.`);
         if (cooldown[user.id] && cooldown[user.id].time > 0) return msg.say(`:no_entry_sign: **${user.username}**, you need to wait another **${moment.duration(cooldown[user.id].time).format(' H [hours], m [minutes] & s [seconds]')}** before catching another pokemon.`);
-        //if (!cooldown[user.id]) cooldown[user.id] = {time: 18000000};
-        if (!cooldown[user.id]) cooldown[user.id] = {time: 7200000};
+        if (!cooldown[user.id]) cooldown[user.id] = {time: 10800000}; //3 hours
         try {
-          //cooldown[user.id].time = 18000000; //5 hours
-          cooldown[user.id].time = 7200000;
+          cooldown[user.id].time = 10800000; //3 hours
           setInterval(() => {
             if (!cooldown[user.id]) cooldown[user.id] = {time: 0};
             cooldown[user.id].time -= 10000; //remove 10 seconds
           }, 10000); //every 10 seconds
           setTimeout(() => {
             delete cooldown[user.id];
-          //}, 18000000); //5 hours
-        }, 7200000);
+          }, 10800000); //3 hours
         } catch(e) {}
 
         /*setInterval(() => {
@@ -62,7 +59,7 @@ module.exports = class PokemonCommand extends Command {
         Object.keys(data[user.id].pokemon).forEach(key => {
           arr.push(data[user.id].pokemon[key].name);
         });
-        if (arr.length > 150) return msg.reply(':tada: **You\'ve caught all 151 pokemon!** :tada:');
+        if (arr.length === 802) return msg.reply(':tada: **You\'ve caught all 802 pokemon!** :tada:');
         if (data[user.id].pokemon[newPokemon]) {
           data[user.id].pokemon[newPokemon].count++;
           fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));

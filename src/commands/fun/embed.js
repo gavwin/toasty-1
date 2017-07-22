@@ -25,7 +25,7 @@ module.exports = class EmbedCommand extends Command {
   async run(msg, args) {
     await msg.embed({
       description: args.text,
-      color: 0x00AE86,
+      color: 'RANDOM',
       author: {
         name: msg.author.username,
         icon_url: msg.author.displayAvatarURL

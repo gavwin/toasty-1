@@ -43,7 +43,7 @@ module.exports = class InventoryCommand extends Command {
       let start = page * 10;
       start += page;
       let stop = start + 20;
-      m.edit(`__**${user.username}'s Pokemon:**__ Includes **${toSend.length}/151** Pokemon. [Page ${page} (20 shown)]\n${toSend.slice(start, stop).join('\n')}`);
+      m.edit(`__**${user.username}'s Pokemon:**__ Includes **${toSend.length}/802** Pokemon. [Page ${page} (20 shown)]\n${toSend.slice(start, stop).join('\n')}`);
       m.awaitReactions((reaction, user) => user.id === msg.author.id, {
         max: 1,
         time: 30000
@@ -60,7 +60,7 @@ module.exports = class InventoryCommand extends Command {
       }).catch(() => m.edit('Pokemon inventory session ended.'));
     }
 
-    const m = await msg.say(`__**${user.username}'s Pokemon:**__ Includes **${toSend.length}/151** Pokemon. [Page 1] \n${toSend.slice(0, 20).join('\n')}`);
+    const m = await msg.say(`__**${user.username}'s Pokemon:**__ Includes **${toSend.length}/802** Pokemon. [Page 1] \n${toSend.slice(0, 20).join('\n')}`);
     m.react('⬅').then(() => m.react('➡').then(() => m.react('❌')));
     m.awaitReactions((reaction, user) => user.id === msg.author.id, {
       max: 1,

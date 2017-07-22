@@ -12,7 +12,7 @@ module.exports = class TradeCommand extends Command {
       name: 'trade',
       group: 'pokemon',
       memberName: 'trade',
-      description: 'Shows your or others pokemon.',
+      description: 'Trade your Pokemon with another user\'s Pokemon.',
       details: 'Catch pokemon with the pokemon command.\nYou can trade the pokemon you catch with this command.',
       examples: ['trade @user pikachu charzard'],
       guildOnly: true,

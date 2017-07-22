@@ -17,8 +17,7 @@ exports.run = async (client, guild) => {
       server_count: client.guilds.size,
       shard_id: client.shard.id,
       shard_count: client.shard.count
-    })
-    .then(console.log('Sent guild count to discordbots.org!'));
+    });
 
   snekfetch.post(`https://bots.discord.pw/api/bots/${client.user.id}/stats`)
     .set('Authorization', discordpwToken)
@@ -26,8 +25,7 @@ exports.run = async (client, guild) => {
       server_count: client.guilds.size,
       shard_id: client.shard.id,
       shard_count: client.shard.count
-    })
-    .then(console.log('Sent guild count to bots.discord.pw!'));
+    });
 
     const stats = JSON.parse(fs.readFileSync(statsPath, 'utf8'));
     if (!stats) stats = { guilds: 0 };

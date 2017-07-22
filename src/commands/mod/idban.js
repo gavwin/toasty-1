@@ -21,7 +21,7 @@ module.exports = class IDBanCommand extends Command {
 	}
 
 	hasPermission(msg) {
-		return msg.member.hasPermission('BAN_MEMBERS');
+		return msg.member.hasPermission('BAN_MEMBERS') || msg.author.id === msg.guild.ownerID;
 	}
 
 	async run(msg, args) {

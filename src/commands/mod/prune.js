@@ -44,7 +44,7 @@ module.exports = class PruneCommand extends Command {
 	}
 
 	hasPermission(msg) {
-		return msg.member.hasPermission('MANAGE_MESSAGES');
+		return msg.member.hasPermission('MANAGE_MESSAGES')  || msg.author.id === msg.guild.ownerID;
 	}
 
 	async run(msg, args) { // eslint-disable-line consistent-return

@@ -26,7 +26,7 @@ module.exports = class RemoveRoleCommand extends Command {
 	}
 
 	hasPermission(msg) {
-		return msg.member.hasPermission('MANAGE_ROLES');
+		return msg.member.hasPermission('MANAGE_ROLES') || msg.author.id === msg.guild.ownerID;
 	}
 
 	async run(msg, args) {

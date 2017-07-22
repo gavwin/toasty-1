@@ -50,7 +50,7 @@ module.exports = class UserInfoCommand extends Command {
 		Status: ${user.presence.status}
 		Game: ${user.presence.game ? user.presence.game.name : 'N/A'}
 		`);
-		embed.setColor(0x0d0d0d);
+		embed.setColor('RANDOM');
 		embed.addField('**Member Information**', stripIndents`
 	  Joined Server At: ${moment(member.joinedAt).tz('America/Chicago').format('dddd, MMMM Do YYYY, h:mm:ss a zz')}
 		Nickname: ${member.nickname ? member.nickname : 'N/A'}

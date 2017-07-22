@@ -26,7 +26,7 @@ module.exports = class ServerInfoCommand extends Command {
 		const onlinePeeps = `${guild.members.size} members\n${guild.members.filter(member => member.presence.status !== 'offline').size} online`;
 
 		const embed = new RichEmbed();
-		embed.setColor(0x0d0d0d)
+		embed.setColor('RANDOM')
 			   .setAuthor(`${msg.guild.name} (${msg.guild.id})`, msg.guild.iconURL)
 			   .addField('Created at', moment(msg.guild.createdAt).tz('America/Chicago').format('dddd, MMMM Do YYYY, h:mm:ss a zz'), true)
 			   .addField('Owner', `${msg.guild.owner.user.username}#${msg.guild.owner.user.discriminator} (${msg.guild.owner.id})`)

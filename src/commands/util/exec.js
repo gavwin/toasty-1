@@ -26,8 +26,8 @@ module.exports = class ExecuteCommand extends Command {
 
 	async run(msg, args) {
 		exec(args.code, (err, stdout, stderr) => {
-			if (err) return msg.code('', err.message);
-			return msg.code('', stdout);
+			if (err) return msg.channel.send(err.message, { code: '' });
+			return msg.channel.send(stdout, { code: '' });
 		});
 	}
 };

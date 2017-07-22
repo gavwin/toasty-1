@@ -20,7 +20,7 @@ module.exports = class SettingsCommand extends Command {
 
   async run(msg) {
     const m = await msg.say('*Fetching your server settings...*');
-    const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data/servers.json')));
+    const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'servers.json')));
     const embed = new RichEmbed();
     let settingsData = data[msg.guild.id] ? data[msg.guild.id] : {settings: "none"};
 
@@ -64,10 +64,15 @@ module.exports = class SettingsCommand extends Command {
     } else {
         var modlog = settingsData.modlog;
     }
+    if (!settingsData.DJRole) {
+        var DJRole = "disabled";
+    } else {
+        var DJRole = settingsData.DJRole;
+    }
 
-    embed.setColor(0x00FFE1)
+    embed.setColor('RANDOM')
         .setAuthor(`Server settings for, ${msg.guild.name}`, msg.guild.iconURL)
-        .setDescription("")
+        .setDescription('')
         .addField(`Join Message`, joinMessage, true)
         .addField(`Leave Message`, leaveMessage, true)
         .addField(`Join DM`, joinDM, true)
@@ -76,6 +81,7 @@ module.exports = class SettingsCommand extends Command {
         .addField(`Mod Log`, modlog, true)
         .addField(`No Invite`, noinvite, true)
         .addField(`No NSFW`, nonsfw, true)
+        .addField(`DJ Role`, DJRole, true);
     m.edit({ embed });
   }
 };
