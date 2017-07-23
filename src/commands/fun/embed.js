@@ -1,4 +1,5 @@
 const { Command } = require('discord.js-commando');
+const { RichEmbed } = require('discord.js');
 
 module.exports = class EmbedCommand extends Command {
   constructor(client) {
@@ -22,14 +23,11 @@ module.exports = class EmbedCommand extends Command {
     });
   }
 
-  async run(msg, args) {
-    await msg.embed({
-      description: args.text,
-      color: 'RANDOM',
-      author: {
-        name: msg.author.username,
-        icon_url: msg.author.displayAvatarURL
-      }
-    });
+  run(msg, args) {
+    const embed = new RichEmbed();
+    embed.setColor('RANDOM')
+        .setAuthor(msg.author.username, msg.author.avatarURL)
+        .setDescription(args.text);
+    msg.embed(embed);
   }
 };

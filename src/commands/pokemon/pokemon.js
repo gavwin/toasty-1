@@ -64,12 +64,28 @@ module.exports = class PokemonCommand extends Command {
           data[user.id].pokemon[newPokemon].count++;
           fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
         } else {
-          data[user.id].pokemon[newPokemon] = {
-            name: newPokemon,
-            gif: `http://www.pokestadium.com/sprites/xy/${newPokemon.toLowerCase()}.gif`,
-            count: 1
+          if (newPokemon === 'Mime Jr.') {
+            data[user.id].pokemon[newPokemon] = {
+              name: newPokemon,
+              gif: `http://www.pokestadium.com/sprites/xy/mime-jr.gif`,
+              count: 1
+            }
+            fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
+          } else if (newPokemon === 'Mr. Mime') {
+            data[user.id].pokemon[newPokemon] = {
+              name: newPokemon,
+              gif: `http://www.pokestadium.com/sprites/xy/mr-mime.gif`,
+              count: 1
+            }
+            fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
+          } else {
+            data[user.id].pokemon[newPokemon] = {
+              name: newPokemon,
+              gif: `http://www.pokestadium.com/sprites/xy/${newPokemon.toLowerCase()}.gif`,
+              count: 1
+            }
+            fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
           }
-          fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
         }
       }
 

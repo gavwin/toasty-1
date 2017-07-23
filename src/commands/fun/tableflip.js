@@ -9,15 +9,15 @@ module.exports = class TableFlipCommand extends Command {
       memberName: 'tableflip',
       description: 'Flips a table in the chat.',
       throttling: {
-        usages: 2,
-        duration: 3
+        usages: 1,
+        duration: 10
       }
     });
   }
 
   async run(msg) {
     const m = await msg.say('┬─┬ノ( º _ ºノ)');
-    setTimeout(() => { m.edit('(°-°)\\ ┬─┬'); }, 450);
+    setTimeout(() => { m.edit('(°-°)\\ ┬─┬') }, 450);
     setTimeout(() => { m.edit('(╯°□°)╯    ]') }, 950);
     setTimeout(() => { m.edit('(╯°□°)╯  ︵  ┻━┻') }, 1250);
   }

@@ -29,6 +29,12 @@ exports.run = (client, msg) => {
     msg.channel.send(`I've grown by **${stats.guilds}** servers today!`);
   }
 
+  if (msg.content.startsWith(prefix+'ctlogs') && msg.author.id === me) {
+    msg.reply(':white_check_mark: Logged and cleared ctLogger.');
+    console.log(ctLogger.join('\n'));
+    ctLogger.splice(0, ctLogger.length);
+  }
+
   const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'servers.json')));
   const settings = data[msg.guild.id] ? data[msg.guild.id] : {nonsfw: 'disabled', noinvite: 'disabled'};
 
@@ -133,12 +139,18 @@ const musicCommands = {
               dispatcher.end();
             });
           } else {
-            const DJRole = msg.guild.roles.find('name', mSettings.DJRole);
-            if (!DJRole) return msg.channel.send(`:no_entry_sign: **Error:** The currently set DJ role is not a role on this server. Please either set the DJ role to \`off\` or to a valid role on this server.\nYou may do this by using: \`${prefix}djrole [role | off]\``);
-            if (!msg.member.roles.has(DJRole.id)) return msg.channel.send(`:no_entry_sign: You can't use the skip commands because you do not have the **${DJRole}** DJ role.`);
-            msg.channel.send(':arrow_forward: Skipped.').then(() => {
-              dispatcher.end();
-            });
+            if (mSettings.DJRole === undefined) {
+              msg.channel.send(':arrow_forward: Skipped.').then(() => {
+                dispatcher.end();
+              });
+            } else {
+              const DJRole = msg.guild.roles.find('name', mSettings.DJRole);
+              if (!DJRole) return msg.channel.send(`:no_entry_sign: **Error:** The currently set DJ role is not a role on this server. Please either set the DJ role to \`off\` or to a valid role on this server.\nYou may do this by using: \`${prefix}djrole [role | off]\``);
+              if (!msg.member.roles.has(DJRole.id)) return msg.channel.send(`:no_entry_sign: You can't use the skip commands because you do not have the **${DJRole}** DJ role.`);
+              msg.channel.send(':arrow_forward: Skipped.').then(() => {
+                dispatcher.end();
+              });
+            }
           }
         } else if (m.content.startsWith(prefix+'volume')) {
           if (m.content === prefix+'volume')  {
@@ -163,20 +175,16 @@ const musicCommands = {
           const voiceChannel = msg.member.voiceChannel;
           if (!voiceChannel || voiceChannel.type !== 'voice') return m.reply(':no_entry_sign: You\'re not in a voice channel!');
           if (mSettings.DJRole === 'disabled') {
-            if (!queue[msg.guild.id]) queue[msg.guild.id] = {playing: false, paused: false};
-            queue[msg.guild.id].playing = false;
-            if (queue[msg.guild.id].paused) queue[msg.guild.id].paused = false;
-            dispatcher.end();
-            msg.channel.send('I\'ve stopped playing, left your voice channel and cleared the queue.');
+            stopPlaying(msg, collector);
           } else {
-            const DJRole = msg.guild.roles.find('name', mSettings.DJRole);
-            if (!DJRole) return msg.channel.send(`:no_entry_sign: **Error:** ${DJRole} is not a role on this server. Please either set the DJ role to \`off\` or to a valid role on this server.\nYou may do this by using: \`${prefix}djrole [role | off]\``);
-            if (!msg.member.roles.has(DJRole.id)) return msg.channel.send(`:no_entry_sign: You can't use the stop commands because you do not have the **${DJRole}** DJ role.`);
-            if (!queue[msg.guild.id]) queue[msg.guild.id] = {playing: false, paused: false};
-            queue[msg.guild.id].playing = false;
-            if (queue[msg.guild.id].paused) queue[msg.guild.id].paused = false;
-            dispatcher.end();
-            msg.channel.send('I\'ve stopped playing, left your voice channel and cleared the queue.');
+            if (mSettings.DJRole === undefined) {
+              stopPlaying(msg, collector);
+            } else {
+              const DJRole = msg.guild.roles.find('name', mSettings.DJRole);
+              if (!DJRole) return msg.channel.send(`:no_entry_sign: **Error:** ${DJRole} is not a role on this server. Please either set the DJ role to \`off\` or to a valid role on this server.\nYou may do this by using: \`${prefix}djrole [role | off]\``);
+              if (!msg.member.roles.has(DJRole.id)) return msg.channel.send(`:no_entry_sign: You can't use the stop commands because you do not have the **${DJRole}** DJ role.`);
+              stopPlaying(msg, collector);
+            }
           }
         }
       });
@@ -274,13 +282,13 @@ const musicCommands = {
       const songs = await dyouTube.getPlaylist(url);
       for (let i = 0, len = songs.length; i < len; i++) {
         try {
-        if (!queue.hasOwnProperty(msg.guild.id)) queue[msg.guild.id] = {}, queue[msg.guild.id].playing = false, queue[msg.guild.id].songs = [];
-        queue[msg.guild.id].songs.push({
-          url: songs[i].url,
-          title: songs[i].title,
-          requester: msg.author.username
-        });
-      } catch(e) {}
+          if (!queue.hasOwnProperty(msg.guild.id)) queue[msg.guild.id] = {}, queue[msg.guild.id].playing = false, queue[msg.guild.id].songs = [];
+          queue[msg.guild.id].songs.push({
+            url: songs[i].url,
+            title: songs[i].title,
+            requester: msg.author.username
+          });
+        } catch(e) {}
       }
       m.edit(`:white_check_mark: The playlist has been queued.`);
     }
@@ -315,23 +323,15 @@ const musicCommands = {
     const mData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'servers.json')));
     const mSettings = mData[msg.guild.id] ? mData[msg.guild.id] : {DJRole: 'disabled'};
     if (mSettings.DJRole === 'disabled') {
-      if (queue[msg.guild.id] === undefined || !queue[msg.guild.id]) return msg.channel.send(':no_entry_sign: There are currently no songs in the server queue.');
-      try {
-        queue[msg.guild.id].songs.splice(0, queue[msg.guild.id].songs.length);
-        msg.reply(':white_check_mark: I\'ve cleared the server queue.');
-      } catch(e) {
-        msg.reply(`:no_entry_sign: **Error:**\n${e}`);
-      }
+      clearqueue(msg);
     } else {
-      const DJRole = msg.guild.roles.find('name', mSettings.DJRole);
-      if (!DJRole) return msg.channel.send(`:no_entry_sign: **Error:** ${DJRole} is not a role on this server. Please either set the DJ role to \`off\` or to a valid role on this server.\nYou may do this by using: \`${prefix}djrole [role | off]\``);
-      if (!msg.member.roles.has(DJRole.id)) return msg.channel.send(`:no_entry_sign: You can't use the clearqueue commands because you do not have the **${DJRole}** DJ role.`);
-      if (queue[msg.guild.id] === undefined || !queue[msg.guild.id]) return msg.channel.send(':no_entry_sign: There are currently no songs in the server queue.');
-      try {
-        queue[msg.guild.id].songs.splice(0, queue[msg.guild.id].songs.length);
-        msg.reply(':white_check_mark: I\'ve cleared the server queue.');
-      } catch(e) {
-        msg.reply(`:no_entry_sign: **Error:**\n${e}`);
+      if (mSettings.DJRole === undefined) {
+        clearqueue(msg);
+      } else {
+        const DJRole = msg.guild.roles.find('name', mSettings.DJRole);
+        if (!DJRole) return msg.channel.send(`:no_entry_sign: **Error:** ${DJRole} is not a role on this server. Please either set the DJ role to \`off\` or to a valid role on this server.\nYou may do this by using: \`${prefix}djrole [role | off]\``);
+        if (!msg.member.roles.has(DJRole.id)) return msg.channel.send(`:no_entry_sign: You can't use the clearqueue commands because you do not have the **${DJRole}** DJ role.`);
+        clearqueue(msg);
       }
     }
   },
@@ -375,6 +375,30 @@ const musicCommands = {
   }
 };
 
+function clearqueue(msg) {
+  if (queue[msg.guild.id] === undefined || !queue[msg.guild.id]) return msg.channel.send(':no_entry_sign: There are currently no songs in the server queue.');
+  try {
+    queue[msg.guild.id].songs.splice(0, queue[msg.guild.id].songs.length);
+    msg.reply(':white_check_mark: I\'ve cleared the server queue.');
+  } catch(e) {
+    msg.reply(`:no_entry_sign: **Error:**\n${e}`);
+  }
+}
+
+function stopPlaying(msg, collector) {
+  if (!queue[msg.guild.id]) queue[msg.guild.id] = {playing: false, paused: false};
+  if (!queue[msg.guild.id]) queue[msg.guild.id] = {playing: false, paused: false};
+  queue[msg.guild.id].playing = false;
+  if (queue[msg.guild.id].paused) queue[msg.guild.id].paused = false;
+  collector.stop();
+  if (!queue[msg.guild.id]) queue[msg.guild.id] = { songs: [] };
+  delete queue[msg.guild.id];
+  delete dispatcher;
+  const voiceChannel = msg.member.voiceChannel;
+  if (!voiceChannel || voiceChannel.type !== 'voice') return msg.channel.send('I could not leave the voice channel. Try using, `;leave`.');
+  voiceChannel.leave();
+  msg.channel.send('I\'ve stopped playing, left your voice channel and cleared the queue.');
+}
+
 const ctLogger = new Array();
 process.on('unhandledRejection', err => ctLogger.push(err.stack));
-process.on('uncaughtException', err => ctLogger.push(err.stack));
