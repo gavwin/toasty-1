@@ -24,8 +24,10 @@ module.exports = class PokemonCommand extends Command {
       }
     });
   }
-
-  async run(msg) {
+  run(msg) {
+    msg.reply('Sorry, the Pokemon commands are temporarily disabled. We are looking into the issue that is breaking them.');
+  }
+  /*async run(msg) {
     const user = msg.author;
     const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
     snekfetch.get(`https://discordbots.org/api/bots/${this.client.user.id}/votes?onlyids=1`)
@@ -44,12 +46,6 @@ module.exports = class PokemonCommand extends Command {
             delete cooldown[user.id];
           }, 10800000); //3 hours
         } catch(e) {}
-
-        /*setInterval(() => {
-        Object.keys(cooldown).forEach(key => {
-          cooldown[key].time -= 10000; //remove 10 seconds
-        });
-      }, 10000); //every 10 seconds*/
 
       const newPokemon = randomPokemon();
       function addPokemon(newPokemon, user) {
@@ -98,5 +94,5 @@ module.exports = class PokemonCommand extends Command {
         addPokemon(newPokemon, user);
       }
     });
-  }
+  }*/
 };

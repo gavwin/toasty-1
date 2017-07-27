@@ -26,8 +26,10 @@ module.exports = class InventoryCommand extends Command {
       }
     });
   }
-
-  async run(msg, args) {
+  run(msg, args) {
+    msg.reply('Sorry, the Pokemon commands are temporarily disabled. We are looking into the issue that is breaking them.');
+  }
+  /*async run(msg, args) {
     const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data/pokemon.json'), 'utf8'));
     const user = args.user || msg.author;
 
@@ -76,5 +78,6 @@ module.exports = class InventoryCommand extends Command {
       }
     }).catch(() => m.edit('Pokemon inventory session ended.'));
 
-  }
+  }*/
+
 };

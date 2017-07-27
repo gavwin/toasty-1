@@ -33,7 +33,7 @@ module.exports = class KickCommand extends Command {
 	}
 
 	async run(msg, args) {
-		const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data/servers.json'), 'utf8'));
+		const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'servers.json'), 'utf8'));
 		const { member, reason } = args;
 		if (member.user.id === this.client.user.id) return msg.reply(':no_entry_sign: I can\'t kick myself \\:P');
 		const botMember = await msg.guild.fetchMember(this.client.user);
@@ -55,7 +55,7 @@ module.exports = class KickCommand extends Command {
 				   .setAuthor(member.user.username, member.user.avatarURL)
 					 .setTitle('User Kicked:')
 					 .setDescription(`${member.user.username}#${member.user.discriminator} (${member.user.id})`)
-					 .addField('Reason:', reason)
+					 .addField('Reason:', reason ? reason : 'not specified')
 					 .addField('Responsible Moderator:', `${msg.author.username}#${msg.author.discriminator} (${msg.author.id})`)
 					 .setFooter(`${date} at ${time}`);
 			this.client.channels.get(channel).send({ embed }).catch(err => {

@@ -36,7 +36,7 @@ exports.run = (client, msg) => {
   }
 
   const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'servers.json')));
-  const settings = data[msg.guild.id] ? data[msg.guild.id] : {nonsfw: 'disabled', noinvite: 'disabled'};
+  const settings = data[msg.guild.id] ? data[msg.guild.id] : {nonsfw: 'disabled', noinvite: 'disabled', nomemedog: 'disabled'};
 
   if (settings.nonsfw === 'enabled' && msg.attachments) {
     const urls = msg.attachments
@@ -61,6 +61,35 @@ exports.run = (client, msg) => {
       if (!msg.guild.member(client.user).hasPermission('MANAGE_MESSAGES')) return msg.channel.send(':no_entry_sign: **Error:** I could not delete a Discord invite because I do not have the **Manage Messages** permission!');
       msg.delete().then(() => msg.reply(':no_entry_sign: There is no invite link sending allowed on this server!'));
     }
+  }
+
+  const memedogs = [
+`╭━━━━╮               This is memedog. Help
+╰┃ ┣▇━▇                memedog take over
+ ┃ ┃  ╰━▅╮ Discord by pasting
+ ╰┳╯ ╰━━┳╯        him in 10 other
+  ╰╮ ┳━━╯            servers or he
+ ▕▔▋ ╰╮╭━╮   will never be a meme dog
+╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+▏  ▔▔▔▔▔▔▔  O O┃
+╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+ ▏╳▕▇▇▕ ▏╳▕▇▇▕
+ ╲▂╱╲▂╱ ╲▂╱╲▂╭━━━━╮
+There`,
+`╭━━━━╮ This is memedog. Help
+╰┃ ┣▇━▇ memedog take over
+ ┃ ┃  ╰━▅╮ Discord by pasting
+ ╰┳╯ ╰━━┳╯ him in 10 other
+  ╰╮ ┳━━╯ servers or he
+ ▕▔▋ ╰╮╭━╮ will never be a meme dog
+╱▔╲▋╰━┻┻╮╲╱▔▔▔╲
+▏  ▔▔▔▔▔▔▔  O O┃
+╲╱▔╲▂▂▂▂╱▔╲▂▂▂╱
+ ▏╳▕▇▇▕ ▏╳▕▇▇▕
+ ╲▂╱╲▂╱ ╲▂╱╲▂╱`];
+  if (memedogs.some(m => msg.content.includes(m)) && settings.nomemedog === 'enabled') {
+    if (!msg.guild.member(client.user).hasPermission('MANAGE_MESSAGES')) return msg.channel.send(':no_entry_sign: **Error:** I could not delete memedog because I do not have the **Manage Messages** permission!');
+    msg.delete().then(() => msg.reply(':no_entry_sign: There is no memedog allowed on this server!'));
   }
 
   if (!msg.content.startsWith(prefix)) return;
@@ -191,7 +220,7 @@ const musicCommands = {
       dispatcher.once('end', () => {
         collector.stop();
         if (!queue[msg.guild.id]) queue[msg.guild.id] = { songs: [] };
-        if (queue[msg.guild.id].songs.length === 0) {
+        if (queue[msg.guild.id].songs.length !== undefined && queue[msg.guild.id].songs.length === 0) {
           delete queue[msg.guild.id];
           delete dispatcher;
           msg.channel.send('There are no more songs in the queue. Leaving voice channel...');

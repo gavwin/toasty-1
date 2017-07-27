@@ -10,7 +10,7 @@ module.exports = class ToggleCommand extends Command {
 			group: 'config',
 			memberName: 'toggle',
 			description: 'Toggles a certain feature.',
-      details: 'Anybody with the Administrator permission can toggle a certain feature from the list below.\nnoinvite, nonsfw, modlog or joinlog.',
+      details: 'Anybody with the Administrator permission can toggle a certain feature from the list below.\nnoinvite, nonsfw, nomemedog, modlog or joinlog.',
 			examples: ['toggle joinlog', 'toggle noinvite'],
 			guildOnly: true,
 			args: [
@@ -73,6 +73,24 @@ module.exports = class ToggleCommand extends Command {
         }
       } else
 
+			if (feature === 'NOMEMEDOG') {
+				if (!data[msg.guild.id]) data[msg.guild.id] = {'nomemedog': 'disabled'};
+        if (data[msg.guild.id].nomemedog === 'enabled') {
+          data[msg.guild.id].nomemedog = 'disabled';
+          fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
+          msg.reply(':white_check_mark: The no memedog feature is now **disabled**.');
+        } else
+        if (!data[msg.guild.id].nomemedog === 'disabled') {
+          data[msg.guild.id].nomemedog = 'enabled';
+          fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
+          msg.reply(':white_check_mark: The no memedog feature is now **enabled**.');
+        } else {
+          data[msg.guild.id].nomemedog = 'enabled';
+          fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
+          msg.reply(':white_check_mark: The no memedog feature is now **enabled**.');
+        }
+			}
+
       if (feature === 'MODLOG') {
 				if (!data[msg.guild.id]) data[msg.guild.id] = {'modlog': 'disabled'};
         if (data[msg.guild.id].modlog === 'enabled') {
@@ -132,7 +150,7 @@ module.exports = class ToggleCommand extends Command {
             });
         }
       } else {
-        msg.reply(':no_entry_sign: That\'s not a valid feature. Avaliable features include:\nnoinvite, nonsfw, modlog and joinlog.');
+        msg.reply(':no_entry_sign: That\'s not a valid feature. Avaliable features include:\nnoinvite, nonsfw, nomemedog, modlog and joinlog.');
       }
     }
 

@@ -39,8 +39,10 @@ module.exports = class TradeCommand extends Command {
       }
     });
   }
-
-  async run(msg, args) {
+  run(msg, args) {
+    msg.reply('Sorry, the Pokemon commands are temporarily disabled. We are looking into the issue that is breaking them.');
+  }
+  /*async run(msg, args) {
     const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
     let { user, pokemon1, pokemon2 } = args;
     function cap(text) {
@@ -146,6 +148,6 @@ module.exports = class TradeCommand extends Command {
 
 		}).catch(() => msg.say(`Cancelling trade between **${msg.author.username}** and **${user.username}**. Took longer than 15 seconds for a reply.`));
 
-  }
+  }*/
 
 };

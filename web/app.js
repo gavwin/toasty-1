@@ -5,6 +5,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const cookieParser = require('cookie-parser');
 const fs = require('fs');
+const path = require('path');
 const config = require('./config.json');
 
 const callback = require(`${__dirname}/routes/callback`);
@@ -36,6 +37,10 @@ app.get('/login', (req, res) => {
 
 app.get('/features', (req, res) => {
   res.sendFile(`${__dirname}/views/features.html`);
+});
+
+app.get('/inventory', (req, res) => {
+  res.sendFile(`${__dirname}/views/inventory.html`);
 });
 
 app.get('/stats', (req, res) => {
@@ -80,5 +85,7 @@ io.on('connection', (socket) => {
   socket.on('stats', () => {
     let stats = JSON.parse(fs.readFileSync(`${__dirname}/static/assets/json/stats.json`));
     io.emit('stats', stats);
+    let pokemon = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'src', 'data', 'pokemon.json')));
+    io.emit('pokemon', pokemon);
   });
 });
